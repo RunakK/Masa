@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import './modules/header';
+import './modules/accordion';
 
 // ---------------------------------
 
@@ -12,6 +14,19 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
+  //переключение бургера в хедере
+  const button = document.querySelector('.header-example__burger');
+  button.addEventListener('click', () => {
+    button.classList.toggle('btn--blue');
+  });
+
+  const overlay = document.querySelector('.header-example__overlay');
+  overlay.addEventListener('click', () => {
+    button.classList.toggle('btn--blue');
+  });
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
