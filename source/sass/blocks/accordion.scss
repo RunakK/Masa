@@ -1,7 +1,13 @@
 .accordion {
   //max-width: 500px;
   margin: 0 auto 50px auto;
+  margin-bottom: 0;
   color: $color-default-white;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: grid;
+  gap: 23px;
+
 
   & & {
     width: 90%;
@@ -13,8 +19,8 @@
   }
 
   &__element {
-    margin-bottom: 34px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   &__element.is-active>&__button {
@@ -72,18 +78,25 @@
   }
 
   &__wrapper {
-    padding: 10px;
     margin: 0;
-    padding-top: 20px;
-    padding-left: 16px;
-  }
+    padding: 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 5px;
 
-  &__item {
-    list-style: none;
+    .accordion__item {
+      list-style: none;
 
-    & a {
-      color: $color-default-white;
-      opacity: 0.7;
+      a {
+        color: $color-default-white;
+        opacity: 0.7;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: none;
+      }
     }
   }
 }

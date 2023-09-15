@@ -1441,7 +1441,13 @@ button,
 
 .accordion {
   margin: 0 auto 50px auto;
+  margin-bottom: 0;
   color: #ffffff;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  gap: 23px;
 }
 .accordion .accordion {
   width: 90%;
@@ -1451,8 +1457,8 @@ button,
   margin-bottom: 0;
 }
 .accordion__element {
-  margin-bottom: 34px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
 }
 .accordion__element.is-active > .accordion__button {
   opacity: 1;
@@ -1508,17 +1514,29 @@ button,
   display: none;
 }
 .accordion__wrapper {
-  padding: 10px;
   margin: 0;
-  padding-top: 20px;
-  padding-left: 16px;
+  padding: 0;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+  padding-top: 5px;
 }
-.accordion__item {
+.accordion__wrapper .accordion__item {
   list-style: none;
 }
-.accordion__item a {
+.accordion__wrapper .accordion__item a {
   color: #ffffff;
   opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: none;
 }
 
 .btn {
@@ -2046,13 +2064,18 @@ button,
 
 .header-example {
   background-color: transparent;
-  padding: 20px 0;
+  padding: 30px 0;
   z-index: 30;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
   position: relative;
+}
+@media (max-width: 767px) {
+  .header-example {
+    padding-top: 20px;
+  }
 }
 .header-example--base {
   background-color: #ffffff;
@@ -2082,6 +2105,13 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 767px) {
+  .is-open .header-example__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    right: 35px;
+  }
 }
 .header-example .container {
   display: -webkit-box;
@@ -2192,7 +2222,16 @@ button,
 }
 @media (max-width: 767px) {
   .header-example__nav {
+    width: 90%;
     right: 15px;
+    margin: 0 auto;
+    right: 0;
+    max-height: 90vh;
+    padding-bottom: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: -10px;
   }
 }
 .header-example--blue .header-example__nav {
@@ -2225,6 +2264,11 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   color: #ffffff;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 16px;
+  padding-top: 15px;
 }
 .header-example__list a {
   opacity: 0.7;
@@ -2248,6 +2292,7 @@ button,
         -ms-flex-align: start;
             align-items: flex-start;
     margin: 0 0 62px 0;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 1023px) {
@@ -2316,6 +2361,8 @@ button,
   z-index: 25;
   -webkit-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media (hover: hover) {
   .header-example__burger:hover:not(.focus-visible) .header-example__icon::before {
@@ -2352,6 +2399,13 @@ button,
   background-position: center;
   background-size: 100% 1px, 1px 100%;
   background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .is-open .header-example__burger {
+    width: calc(98vw - 25px);
+    margin: 0 auto;
+    right: 5px;
+  }
 }
 @media (max-width: 1199px) {
   .header-example__burger {
@@ -2435,12 +2489,15 @@ button,
   transition: opacity 0.3s ease 0.2s;
 }
 .header-example__burger-text {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
   -webkit-transition: opacity 0.3s ease 0.1s;
   transition: opacity 0.3s ease 0.1s;
   cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
 }
 .is-open .header-example__burger-text {
   pointer-events: none;
