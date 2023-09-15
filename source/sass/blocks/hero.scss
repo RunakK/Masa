@@ -1,0 +1,253 @@
+.hero {
+
+  &__slide {
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      z-index: -1;
+    }
+
+    & h2 {
+      color: $color-cerulean-blue;
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 62px;
+      margin: 0;
+      margin-bottom: -1px;
+      background-color: $color-default-white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      border-radius: 0px 30px 30px 0px;
+      width: 78%;
+      padding: 40px 50px 31px;
+
+      @include vp-1199 {
+        font-size: 36px;
+        line-height: 44px;
+        width: 97%;
+        padding: 30px 40px 24px 40px;
+      }
+
+      @include vp-767 {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 20px 15px 16px 14px;
+        border-radius: 0px 16px 16px 0px;
+        width: 100%;
+      }
+    }
+
+    & p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 0;
+
+      @include vp-1199 {
+        line-height: 20px;
+      }
+
+      @include vp-767 {
+        font-size: 14px;
+        border-radius: 0px 0px 14px 0px;
+        width: 90%;
+        padding-top: 3px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    margin-top: 409px;
+    position: relative;
+    padding-bottom: 60px;
+
+    @include vp-1199 {
+      margin-top: 676px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 20px;
+      margin-top: 233px;
+    }
+  }
+
+  &__description-wrapper {
+    display: flex;
+    position: relative;
+    padding: 0px 50px 35px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 30px 30px;
+    background-color: $color-default-white;
+    width: 62.3%;
+    margin-top: -8px;
+    padding-bottom: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      top: 6px;
+      right: -25px;
+      background: url("../img/svg/angle.svg") no-repeat center;
+      background-size: contain;
+
+      @include vp-767 {
+        width: 10px;
+        height: 10px;
+        right: -10px;
+        top: 6px;
+      }
+    }
+
+    @include vp-1199 {
+      width: 87%;
+      padding: 4px 40px 32px 40px;
+      align-items: flex-start;
+    }
+
+    @include vp-767 {
+      background-color: transparent;
+      flex-direction: column;
+      padding: 0;
+      gap: 0;
+      width: 90%;
+    }
+
+    & p {
+      background-color: $color-default-white;
+      display: flex;
+      padding: 0px 14px 15px 14px;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      border-radius: 0px 0px 14px 0px;
+
+      @include vp-767 {
+        width: 100%;
+        padding-top: 3px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  &__button-wrapper {
+    @include vp-767 {
+      display: flex;
+      padding: 10px 15px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      background-color: $color-default-white;
+      border-radius: 0px 0px 14px 14px;
+      position: relative;
+      width: 70%;
+      margin-top: -1px;
+      padding-top: 7px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -1px;
+        right: -9px;
+        background: url("../img/svg/angle.svg") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    min-width: 196px;
+    padding: 20px 50px 20px 28px;
+
+    @include vp-1199 {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      margin-top: 4px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+      padding: 14px 55px;
+      padding-left: 20px;
+      min-width: fit-content;
+    }
+  }
+
+  &__pagination {
+    position: relative;
+    width: 94px;
+    padding: 20px 16px;
+    background-color: $color-default-white;
+    bottom: 0;
+    margin-bottom: -12px;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    &.swiper-pagination-bullets {
+      bottom: 0;
+      width: 94px;
+      padding-top: 14px;
+      padding-bottom: 26px;
+
+      @include vp-767 {
+        padding: 10px 12px;
+        margin-bottom: 0;
+        width: 80px;
+        border-radius: 12px 12px 0px 0px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+
+      @include vp-767 {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      bottom: 10px;
+      right: -25px;
+      background: url("../img/svg/angle.svg") no-repeat center;
+      background-size: contain;
+      transform: rotate(-90deg);
+
+      @include vp-767 {
+        width: 10px;
+        height: 10px;
+        bottom: 0px;
+        right: -9px;
+      }
+    }
+  }
+}
