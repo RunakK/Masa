@@ -2174,11 +2174,26 @@ button,
   top: 0;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  right: 0;
   visibility: hidden;
   z-index: 20;
   margin-left: auto;
-  right: 100px;
+  right: calc((100vw - 1240px) / 2);
+}
+@media (max-width: 1439px) {
+  .header-example__nav {
+    margin-left: auto;
+    right: 100px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-example__nav {
+    right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .header-example__nav {
+    right: 15px;
+  }
 }
 .header-example--blue .header-example__nav {
   background-color: #316DC2;
@@ -2346,6 +2361,12 @@ button,
     position: relative;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
+  }
+}
+@media (max-width: 767px) {
+  .header-example__burger::after {
+    width: 46px;
+    height: 46px;
   }
 }
 .header-example__icon {

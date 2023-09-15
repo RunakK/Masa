@@ -24,7 +24,7 @@
       top: 0;
       width: 100%;
       height: 100vh;
-  }
+    }
   }
 
   &__wrapper {
@@ -101,13 +101,23 @@
     pointer-events: none;
     top: 0;
     transition: background-color 0.3s ease;
-    right: 0;
     visibility: hidden;
     z-index: 20;
     margin-left: auto;
-    right: 100px;
+    right: calc((100vw - 1240px)/2);
 
-    @include vp-1199 {}
+    @include vp-1439 {
+      margin-left: auto;
+      right: 100px;
+    }
+
+    @include vp-1199 {
+      right: 45px;
+    }
+
+    @include vp-767 {
+      right: 15px;
+    }
 
     .header-example--blue & {
       background-color: $color-cerulean-blue;
@@ -249,6 +259,13 @@
       display: flex;
       position: relative;
       transition: opacity 0.3s ease;
+    }
+
+    @include vp-767 {
+      &::after {
+        width: 46px;
+        height: 46px;
+      }
     }
   }
 

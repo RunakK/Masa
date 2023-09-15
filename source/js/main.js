@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
     button.classList.toggle('btn--blue');
   });
 
-
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
