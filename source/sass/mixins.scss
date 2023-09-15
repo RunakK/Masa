@@ -36,6 +36,12 @@
   }
 }
 
+@mixin active-no-hover {
+  &:active:not(.focus-visible) {
+    @content;
+  }
+}
+
 // Desktop first
 
 @mixin vp-1919 {

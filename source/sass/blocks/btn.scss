@@ -1,26 +1,126 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: flex;
+  padding: 4px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 55px;
+  position: relative;
+  color: $color-cerulean-blue;
+  font-weight: 500;
+  text-transform: uppercase;
 
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  column-gap: 30px;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 30px;
+  align-items: center;
+  width: fit-content;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  & svg {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
   }
 
-  &:disabled {
-    opacity: 0.5;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 4px;
+    width: 46px;
+    height: 46px;
+    background-color: $color-cerulean-blue;
+    border-radius: 50%;
+  }
 
-    pointer-events: none;
+  @include vp-767 {
+    column-gap: 20px;
+
+    &::after {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-cerulean-blue;
+    color: $color-default-white;
+    outline: 1px solid transparent;
+
+    &::after {
+      background-color: $color-default-white;
+    }
+
+    & svg {
+      color: $color-cerulean-blue;
+    }
+  }
+
+  @include active-no-hover {
+    background-color: $color-cerulean-blue;
+    color: rgba(255, 255, 255, 0.7);
+
+    & svg {
+      opacity: 0.7;
+    }
+  }
+
+
+
+  &--blue {
+    color: $color-default-white;
+    border-color: $color-default-white;
+
+    & svg {
+      fill: red;
+      color: red;
+    }
+
+    &::after {
+      background-color: $color-default-white;
+    }
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $color-cerulean-blue;
+      outline: 1px solid transparent;
+
+      &::after {
+        background-color: $color-cerulean-blue;
+      }
+
+      & svg {
+        color: $color-default-white;
+      }
+    }
+
+    @include active-no-hover {
+      background-color: $color-cerulean-blue;
+      opacity: 0.7;
+
+      & svg {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: $color-cerulean-blue;
+    color: $color-default-white;
+    pointer-events: none;
+    border-color: #a9afb7;
+    pointer-events: none;
+
+    &::after {
+      background-color: #a9afb7;
+    }
+
+    & svg {
+      color: #a9afb7;
+    }
   }
 }
