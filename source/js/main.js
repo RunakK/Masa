@@ -26,6 +26,35 @@ window.addEventListener('DOMContentLoaded', () => {
     button.classList.toggle('btn--blue');
   });
 
+
+  const hero = new Swiper('.hero__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // slidesPerView: 1,
+    // spaceBetween: 10,
+
+    // If we need pagination
+    pagination: {
+      el: '.hero__pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    centeredSlides: true,
+  });
+
+  // // Выбираем элемент, высоту которого хотим использовать
+  // const header = document.querySelector('.header-example');
+
+  // // Получаем его высоту
+  // const headerHeight = header.getBoundingClientRect().height;
+
+
+  // // Задаем нужный margin нужному элементу
+  // const heroSlide = document.querySelector('.hero__slide');
+  // heroSlide.style.marginTop = '-' + headerHeight + 'px';
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

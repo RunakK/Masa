@@ -8,6 +8,18 @@
   display: grid;
   gap: 23px;
 
+  @include vp-767 {
+    gap: 22px;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding-top: 3px;
+    @include vp-1199 {
+      padding-top: 6px;
+    }
+  }
+
 
   & & {
     width: 90%;

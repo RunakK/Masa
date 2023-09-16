@@ -3,7 +3,9 @@
   padding: 30px 0;
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  position: relative;
+  position: absolute;
+  right: 0;
+  width: 100%;
 
   @include vp-767 {
     padding-top: 20px;
@@ -34,14 +36,18 @@
   &__wrapper {
     .is-open & {
       position: relative;
-      width: 286px;
+      min-width: 286px;
       display: flex;
       flex-direction: column;
+      width: fit-content;
+
+      @include vp-1199 {
+        margin-left: auto;
+      }
 
       @include vp-767 {
         width: 100%;
         margin: 0 auto;
-        right: 35px;
       }
     }
   }
@@ -66,9 +72,17 @@
       transform: scale(1);
     }
 
+    @include vp-767 {
+      margin-bottom: -5px;
+    }
+
     .is-open & {
       position: relative;
-      z-index: 25;
+      z-index: -1;
+
+      @include vp-767 {
+        display: none;
+      }
     }
 
     .logo__second-part {
@@ -144,10 +158,35 @@
       opacity: 1;
       pointer-events: all;
       visibility: visible;
+      position: absolute;
+      right: 0;
+      padding-top: 58px;
+      height: fit-content;
 
       .header-example__item {
         opacity: 1;
         transform: translateX(0);
+      }
+
+      @include vp-1199 {
+        height: 578px;
+        margin-left: auto;
+        max-height: 90vh;
+      }
+
+      @include vp-767 {
+        width: 90%;
+        right: 15px;
+        margin: 0 auto;
+        right: 0;
+        max-height: 90vh;
+        padding-bottom: 0;
+        height: fit-content;
+        top: -10px;
+        width: calc(100% - 30px);
+        right: 0;
+        padding-top: 68px;
+        width: 100%;
       }
     }
   }
@@ -254,6 +293,8 @@
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 69px;
+    // min-width: 286px;
 
     @include hover-focus {
       .header-example__icon::before {
@@ -264,9 +305,11 @@
 
     .is-open & {
       background-color: $color-cerulean-blue;
-      width: 286px;
+      min-width: 286px;
       justify-content: space-between;
       border: none;
+      width: 100%;
+
 
       @include hover-focus {
         .header-example__icon::after {
@@ -278,9 +321,8 @@
       }
 
       @include vp-767 {
-        width: calc(98vw - 25px);
+        width: 100%;
         margin: 0 auto;
-        right: 5px;
       }
     }
 

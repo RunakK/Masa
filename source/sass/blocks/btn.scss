@@ -23,8 +23,12 @@
 
   & svg {
     position: absolute;
-    right: 15px;
+    right: 21px;
     z-index: 1;
+
+    @include vp-767 {
+      right: 15px;
+    }
   }
 
   &::after {
