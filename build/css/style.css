@@ -1449,6 +1449,20 @@ button,
   display: grid;
   gap: 23px;
 }
+@media (max-width: 767px) {
+  .accordion {
+    gap: 22px;
+    overflow: hidden;
+  }
+}
+.accordion__content {
+  padding-top: 3px;
+}
+@media (max-width: 1199px) {
+  .accordion__content {
+    padding-top: 6px;
+  }
+}
 .accordion .accordion {
   width: 90%;
   margin: 0 auto;
@@ -1571,8 +1585,13 @@ button,
 }
 .btn svg {
   position: absolute;
-  right: 15px;
+  right: 21px;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .btn svg {
+    right: 15px;
+  }
 }
 .btn::after {
   content: "";
@@ -2111,11 +2130,15 @@ button,
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 1199px) {
+  .is-open .header-example__wrapper {
+    margin-left: auto;
+  }
+}
 @media (max-width: 767px) {
   .is-open .header-example__wrapper {
     width: 100%;
     margin: 0 auto;
-    right: 35px;
   }
 }
 .header-example .container {
@@ -2157,9 +2180,19 @@ button,
             transform: scale(1);
   }
 }
+@media (max-width: 767px) {
+  .header-example__logo {
+    margin-bottom: -5px;
+  }
+}
 .is-open .header-example__logo {
   position: relative;
-  z-index: 25;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .is-open .header-example__logo {
+    display: none;
+  }
 }
 @media (max-width: 1279px) {
   .header-example__logo .logo__second-part {
@@ -2246,12 +2279,43 @@ button,
   opacity: 1;
   pointer-events: all;
   visibility: visible;
+  position: absolute;
+  right: 0;
+  padding-top: 58px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .is-open .header-example__nav .header-example__item {
   opacity: 1;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+}
+@media (max-width: 1199px) {
+  .is-open .header-example__nav {
+    height: 578px;
+    margin-left: auto;
+    max-height: 90vh;
+  }
+}
+@media (max-width: 767px) {
+  .is-open .header-example__nav {
+    width: 90%;
+    right: 15px;
+    margin: 0 auto;
+    right: 0;
+    max-height: 90vh;
+    padding-bottom: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: -10px;
+    width: calc(100% - 30px);
+    right: 0;
+    padding-top: 68px;
+    width: 100%;
+  }
 }
 .header-example__list {
   overflow: auto;
@@ -2409,9 +2473,8 @@ button,
 }
 @media (max-width: 767px) {
   .is-open .header-example__burger {
-    width: calc(90vw - 25px);
+    width: 100%;
     margin: 0 auto;
-    right: 5px;
   }
 }
 @media (max-width: 1199px) {
@@ -2629,14 +2692,14 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 25px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 0px 0px 30px 30px;
   background-color: #ffffff;
   width: 62.3%;
   margin-top: -8px;
-  padding-bottom: 28px;
+  padding-bottom: 13px;
 }
 .hero__description-wrapper::after {
   content: "";
@@ -2659,7 +2722,7 @@ button,
 @media (max-width: 1199px) {
   .hero__description-wrapper {
     width: 87%;
-    padding: 4px 40px 32px 40px;
+    padding: 4px 40px 17px 40px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -2683,6 +2746,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding: 0px 14px 15px 14px;
+  padding-left: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2697,14 +2761,17 @@ button,
     width: 100%;
     padding-top: 3px;
     padding-bottom: 10px;
+    padding: 3px 14px 10px;
   }
+}
+.hero__button-wrapper {
+  padding-bottom: 15px;
 }
 @media (max-width: 767px) {
   .hero__button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2718,7 +2785,7 @@ button,
     position: relative;
     width: 70%;
     margin-top: -1px;
-    padding-top: 7px;
+    padding: 7px 15px 10px;
   }
   .hero__button-wrapper::after {
     content: "";

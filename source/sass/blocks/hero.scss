@@ -83,13 +83,13 @@
     padding: 0px 50px 35px 50px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     flex-shrink: 0;
     border-radius: 0px 0px 30px 30px;
     background-color: $color-default-white;
     width: 62.3%;
     margin-top: -8px;
-    padding-bottom: 28px;
+    padding-bottom: 13px;
 
     &::after {
       content: "";
@@ -111,7 +111,7 @@
 
     @include vp-1199 {
       width: 87%;
-      padding: 4px 40px 32px 40px;
+      padding: 4px 40px 17px 40px;
       align-items: flex-start;
     }
 
@@ -127,6 +127,7 @@
       background-color: $color-default-white;
       display: flex;
       padding: 0px 14px 15px 14px;
+      padding-left: 0;
       justify-content: center;
       align-items: center;
       gap: 30px;
@@ -136,14 +137,16 @@
         width: 100%;
         padding-top: 3px;
         padding-bottom: 10px;
+        padding: 3px 14px 10px;
       }
     }
   }
 
   &__button-wrapper {
+    padding-bottom: 15px;
+
     @include vp-767 {
       display: flex;
-      padding: 10px 15px;
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
@@ -152,7 +155,7 @@
       position: relative;
       width: 70%;
       margin-top: -1px;
-      padding-top: 7px;
+      padding: 7px 15px 10px;
 
       &::after {
         content: "";
