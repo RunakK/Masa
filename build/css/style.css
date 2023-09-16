@@ -1556,7 +1556,7 @@ button,
 .about__wrapper {
   padding-right: 106px;
   padding-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1589,6 +1589,184 @@ button,
   .about__button.btn {
     padding-left: 19px;
     padding-right: 58px;
+  }
+}
+.about__features-list {
+  list-style-type: none;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 54px;
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
+  background: #316DC2;
+  border-radius: 20px;
+  padding-top: 92px;
+  padding-left: 10%;
+  padding-right: 8.5%;
+  padding-bottom: 56px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1199px) {
+  .about__features-list {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 42px;
+    padding: 62px 40px 40px 60px;
+    padding-right: 6%;
+    padding-left: 9%;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 22px;
+    padding-top: 42px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 39px;
+    row-gap: 21px;
+  }
+}
+.about__features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 34px 60px;
+  padding-top: 29px;
+  padding-right: 25px;
+  padding-bottom: 29px;
+  padding-left: 12.5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  border: 1px solid #F0EFE9;
+  border-radius: 16px;
+  position: relative;
+  word-break: normal;
+}
+@media (max-width: 1199px) {
+  .about__features-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+    padding-bottom: 23px;
+    row-gap: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-item {
+    padding: 24px 20px;
+    padding-top: 19px;
+    padding-bottom: 24px;
+    margin-left: 10px;
+    row-gap: 4px;
+    width: 100%;
+  }
+}
+.about__features-item::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: #316DC2;
+  background-image: url(../img/svg/star.svg);
+  color: #ffffff;
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -21px;
+  left: -21px;
+}
+@media (max-width: 767px) {
+  .about__features-item::before {
+    background-size: 15px;
+    left: -21px;
+    top: -22px;
+  }
+}
+.about__features-item--right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10%;
+}
+@media (max-width: 767px) {
+  .about__features-item--right {
+    padding-right: 16px;
+  }
+}
+.about__features-item h4 {
+  margin: 0;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 171px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1199px) {
+  .about__features-item h4 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-item h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    max-width: 100%;
+  }
+}
+.about__features-item p {
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  color: #F0EFE9;
+  max-width: 180px;
+}
+@media (max-width: 1199px) {
+  .about__features-item p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .about__features-item p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
   }
 }
 
