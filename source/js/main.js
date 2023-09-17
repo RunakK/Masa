@@ -44,6 +44,45 @@ window.addEventListener('DOMContentLoaded', () => {
     centeredSlides: true,
   });
 
+  const programs = new Swiper('.programs__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+
+      1340: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+
+    navigation: {
+      nextEl: '.programs__next',
+      prevEl: '.programs__prev',
+
+    },
+  });
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
