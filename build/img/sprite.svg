@@ -9,4 +9,6 @@
 
 </g></symbol><symbol id="burger" viewBox="0 0 18 18"><g fill="currentColor">
 <path d="M1 17L9 9M9 9L17 1M9 9L17 17M9 9L1 1" stroke="#316DC2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="cross" viewBox="0 0 22 22"><g fill="currentColor">
+<path d="M2 20L11 11M11 11L20 2M11 11L20 20M11 11L2 2" stroke="#316DC2" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg>

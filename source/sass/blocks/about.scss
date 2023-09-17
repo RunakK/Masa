@@ -146,6 +146,12 @@
     padding-bottom: 56px;
     align-items: start;
 
+    @include vp-1420 {
+      column-gap: 10px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
     @include vp-1199 {
       column-gap: 50px;
       row-gap: 42px;
