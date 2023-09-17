@@ -1,28 +1,34 @@
 .custom-select {
   position: relative;
 
-  width: 300px;
-  padding: 14px 0 28px;
-  margin: 0 0 44px 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  display: grid;
+  gap: 7px;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 14px;
+    padding: 0;
     width: 100%;
+    margin: 0;
   }
 
   &__label {
-    position: absolute;
-    top: 50%;
-    left: 10px;
+    position: relative;
+    top: 0;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 
-    transform: translateY(-50%);
 
-    transition: transform 0.3s ease, opacity  0.3s ease;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
 
     pointer-events: none;
 
     @media screen and (max-width: 767px) {
-      transform: translateY(calc(-50% - 5px));
     }
   }
 
@@ -64,22 +70,26 @@
     align-items: center;
     width: 100%;
     height: 48px;
-    padding: 5px 10px;
+    padding: 5px 18px;
 
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     outline: none;
     cursor: pointer;
 
     transition: border 0.3s ease;
 
+    @include vp-767 {
+      height: 43px;
+    }
+
     &:hover {
-      border: 2px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid $color-charcoal;
     }
 
     &:focus {
-      border: 2px solid rgba(0, 0, 0, 0.8);
+      border: 1px solid $color-charcoal;
     }
 
     &:disabled {
@@ -90,7 +100,7 @@
 
   &__list {
     position: absolute;
-    bottom: 10px;
+    bottom: -9px;
     z-index: 1;
 
     width: 100%;
@@ -102,12 +112,15 @@
     list-style: none;
 
     background-color: #ffffff;
-    border: 2px solid #000000;
+    border: 2px solid $color-charcoal;
     transform: translateY(100%);
     visibility: hidden;
     opacity: 0;
 
     transition: visibility 0.3s ease, opacity 0.3s ease;
+
+
+    border-radius: 8px;
   }
 
   &__item {
@@ -119,27 +132,37 @@
     transition: background-color 0.3s ease;
 
     &[aria-selected="true"] {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: $color-cerulean-blue;
+      color: $color-default-white;
 
       @media (hover: hover) {
         &:hover:not(.focus-visible) {
-          background-color: rgba(0, 0, 0, 0.2);
+          background-color: transparent;
+          color: $color-charcoal;
         }
       }
 
       &.focus-visible:focus {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: $color-cerulean-blue;
+        color: $color-default-white;
       }
     }
 
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: transparent;
+        color: $color-cerulean-blue;
       }
     }
 
     &.focus-visible:focus {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: transparent;
+      color: $color-cerulean-blue;
+    }
+
+    @include active-no-hover {
+      background-color: $color-cerulean-blue;
+      color: $color-default-white;
     }
   }
 
@@ -177,11 +200,11 @@
 
   &__icon {
     flex-shrink: 0;
-    width: 20px;
+    width: 16px;
     height: 10px;
     margin-left: auto;
 
-    background-color: #000000;
+    background-color: $color-charcoal;
 
     transition: transform 0.3s ease;
 
@@ -215,7 +238,7 @@
     }
 
     .custom-select__label {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
@@ -225,7 +248,12 @@
     }
 
     .custom-select__label {
-      opacity: 0;
+      margin: 0;
+      position: relative;
+      font-size: 14px;
+      line-height: 14px;
+      opacity: .8;
+      top: 0;
     }
 
     .custom-select__placeholder {
@@ -239,11 +267,12 @@
     }
 
     .custom-select__button {
-      border: 2px solid #ff1553;
+      border: 1px solid #ff1553;
+      background: rgba(255, 94, 102, 0.20);
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
@@ -261,7 +290,7 @@
 
   &--placeholder {
     .custom-select__label {
-      transform: translateY(calc(-50% - 40px));
+      // transform: translateY(calc(-50% - 40px));
       opacity: 1;
     }
 
@@ -277,7 +306,6 @@
   &.slide-up.not-empty,
   &.slide-up.is-open {
     .custom-select__label {
-      transform: translateY(calc(-50% - 40px));
       opacity: 1;
     }
 

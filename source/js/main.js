@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/header';
 import './modules/accordion';
+import './modules/select';
 
 // ---------------------------------
 
@@ -10,9 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   iosVhFix();
-
   // Modules
 
   //переключение бургера в хедере
@@ -31,6 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    autoplay: true,
+    delay: 3000,
     // slidesPerView: 1,
     // spaceBetween: 10,
 
@@ -42,18 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     centeredSlides: true,
   });
-
-  // // Выбираем элемент, высоту которого хотим использовать
-  // const header = document.querySelector('.header-example');
-
-  // // Получаем его высоту
-  // const headerHeight = header.getBoundingClientRect().height;
-
-
-  // // Задаем нужный margin нужному элементу
-  // const heroSlide = document.querySelector('.hero__slide');
-  // heroSlide.style.marginTop = '-' + headerHeight + 'px';
-
 
   // ---------------------------------
 

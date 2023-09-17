@@ -63,7 +63,6 @@
                 <div class="accordion__element">
                   <a href="#" class="accordion__button accordion__button">Отзывы</a>
                 </div>
-
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button accordion__button--icon" type="button" data-accordion="button">Новости</button>
                   <div class="accordion__content" data-accordion="content">
@@ -86,26 +85,17 @@
                     </ul>
                   </div>
                 </div>
-
                 <div class="accordion__element">
                   <a href="#" class="accordion__button accordion__button">Контакты</a>
                 </div>
-
               </div>
             </div>
         </div>
       </div>
     </header>
-
-
-
-
     <main>
-
-
       <section class="hero">
         <h1 class="visually-hidden">Образование за&nbsp;рубежом</h1>
-
         <div class="swiper hero__swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -139,8 +129,6 @@
                 </div>
               </div>
             </div>
-
-
             <div class="swiper-slide">
               <div class="hero__slide">
                 <picture>
@@ -149,7 +137,7 @@
                   <source type="image/webp" srcset="./img/hero/slide2-desktop.webp, ./img/hero/slide2-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="./img/hero/slide2-mobile.png, ./img/hero/slide2-mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="./img/hero/slide2-tablet.png, ./img/hero/slide2-tablet@2x.png 2x">
-                  <img src="./img/hero/slide2-desktop.png" srcset="./img/hero/slide2-desktop@2x.png 2x" width="1440" height="800" alt="Девушка с книгами в руке" loading="lazy">
+                  <img src="./img/hero/slide2-desktop.png" srcset="./img/hero/slide2-desktop@2x.png 2x" width="1440" height="800" alt="Довольные люди обнимаются" loading="lazy">
                 </picture>
                 <div class="container">
                   <div class="hero__text-wrapper">
@@ -172,9 +160,6 @@
                 </div>
               </div>
             </div>
-
-
-
             <div class="swiper-slide">
               <div class="hero__slide">
                 <picture>
@@ -183,7 +168,7 @@
                   <source type="image/webp" srcset="./img/hero/slide3-desktop.webp, ./img/hero/slide3-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="./img/hero/slide3-mobile.png, ./img/hero/slide3-mobile@2x.png 2x">
                   <source media="(max-width: 1199px)" srcset="./img/hero/slide3-tablet.png, ./img/hero/slide3-tablet@2x.png 2x">
-                  <img src="./img/hero/slide3-desktop.png" srcset="./img/hero/slide3-desktop@2x.png 2x" width="1440" height="800" alt="Девушка с книгами в руке" loading="lazy">
+                  <img src="./img/hero/slide3-desktop.png" srcset="./img/hero/slide3-desktop@2x.png 2x" width="1440" height="800" alt="Группа людей усиленно учится" loading="lazy">
                 </picture>
                 <div class="container">
                   <div class="hero__text-wrapper">
@@ -206,19 +191,118 @@
                 </div>
               </div>
             </div>
-
-
-
-
           </div>
-
         </div>
       </section>
 
 
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__heading">
+              <h2>О проекте «Маса»</h2>
+              <p>&laquo;Маса&raquo;&nbsp;&mdash; совместный проект правительства Израиля и&nbsp;Еврейского агентства Сохнут.</p>
+            </div>
+            <div class="about__description">
+              <h3>Наша цель</h3>
+              <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются Израиль и&nbsp;еврейские общины во&nbsp;всем мире. Цель центра&nbsp;&mdash; наделить этих людей способностью инициировать значимые изменения.</p>
+              <a href="#" class="about__button btn" data-open-modal="feedback">
+                <span>подробнее о проекте</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="about__features">
+            <ul class="about__features-list">
+              <li class="about__features-item">
+                <h4>Более 250 программ</h4>
+                <p>учебных и&nbsp;рабочих, разной&nbsp;длительностью от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года</p>
+              </li>
+              <li class="about__features-item about__features-item--right">
+                <h4>Более 3000 участников</h4>
+                <p>уже успешно прошли программу от&nbsp;&laquo;Маса&raquo; и&nbsp;остались в&nbsp;Израиле</p>
+              </li>
+              <li class="about__features-item">
+                <h4>от&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</h4>
+                <p>грант всем участникам для комфортного прохождения&nbsp;программы</p>
+              </li>
+              <li class="about__features-item about__features-item--right">
+                <h4>участники из&nbsp;60&nbsp;стран</h4>
+                <p>студенты со&nbsp;всего мира&nbsp;приезжают на&nbsp;программу&nbsp;&laquo;Маса&raquo;</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
 
+      <!-- Модалка -->
+      <div class="modal modal--preload" data-modal="feedback">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <div class="modal__heading">
+              <h2>Напишите нам</h2>
+              <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+            </div>
+            <div class="modal__contacts" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+                  <label for="name">
+                    Имя
+                    <input type="text" name="name" id="name" required>
+                  </label>
+                </div>
 
+                <div class="custom-input" data-validate-type="phone" data-on-input-validate="" data-on-input-validate data-required="" data-phone-length="18">
+                  <label for="number">
+                    Телефон
+                    <input type="tel" name="number" id="number" required>
+                  </label>
+                </div>
+
+                <div class="custom-select" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
+                  <span class="custom-select__label">Выберите город</span>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon"></span>
+                  </button>
+                  <ul class="custom-select__list" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Тема 1</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Тема 2</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Тема 3</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Тема 4</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Тема 5</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Тема 6</li>
+                  </ul>
+                </div>
+
+                <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required="">
+                  <label>
+                    <input type="checkbox" value="user-agreement" name="user-agreement">
+                    <span class="custom-toggle__icon"></span>
+                    <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="btn modal__button" type="submit">
+                  <span>Отправить</span>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
 
 
 
