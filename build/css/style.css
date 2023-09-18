@@ -3692,13 +3692,156 @@ button,
 }
 @media (max-width: 1199px) {
   .programs {
-    padding-top: 88px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 767px) {
   .programs {
-    padding-top: 67px;
+    padding-top: 70px;
   }
+}
+.programs.container {
+  padding-bottom: 182px;
+}
+.programs__swiper {
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .programs__swiper {
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: 1199px) {
+  .programs .container {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .programs .container {
+    padding-right: 15px;
+  }
+}
+.programs__nav-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 52px;
+}
+@media (max-width: 1199px) {
+  .programs__nav-wrapper {
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__nav-wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+}
+.programs__scrollbar.swiper-scrollbar {
+  height: 2px;
+  background: rgba(49, 109, 194, 0.2);
+  width: 91.5%;
+  left: 0;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .programs__scrollbar.swiper-scrollbar {
+    width: 82.5%;
+    bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__scrollbar.swiper-scrollbar {
+    display: none;
+  }
+}
+.programs .swiper-scrollbar-drag {
+  background-color: #316DC2;
+}
+.programs__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  position: absolute;
+  bottom: 42px;
+  right: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1199px) {
+  .programs__buttons-wrapper {
+    right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__buttons-wrapper {
+    top: -2px;
+    right: 14px;
+  }
+}
+.programs__button-nav {
+  color: #316DC2;
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .programs__button-nav:hover:not(.focus-visible) {
+    background: #ffffff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+  }
+}
+.programs__button-nav.focus-visible:focus {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+.programs__button-nav:active:not(.focus-visible) {
+  opacity: 0.7;
+}
+.programs__button-nav:disabled svg {
+  color: #a9afb7;
+}
+.programs__button-nav svg {
+  width: 10px;
+  height: 10px;
+  color: #316DC2;
+}
+.programs__button-nav--prev {
+  rotate: -135deg;
+}
+.programs__button-nav--next {
+  rotate: 45deg;
 }
 .programs__heading {
   display: -webkit-box;
@@ -3714,6 +3857,25 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 44px;
+}
+@media (max-width: 1199px) {
+  .programs__heading {
+    margin-bottom: 39px;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__heading {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__heading .btn {
+    position: absolute;
+    bottom: 0;
+    min-width: 63%;
+    padding-left: 29px;
+  }
 }
 .programs__button.btn {
   padding-top: 14px;
@@ -3755,16 +3917,21 @@ button,
   margin: 0;
   margin-bottom: -1px;
   padding: 18px;
-  padding: 13px 18px 3px;
+  padding: 13px 16px 3px;
   border-radius: 12px 12px 0px 0px;
-  width: 55%;
+  min-width: 194px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   word-break: normal;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .programs h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    min-width: 172px;
   }
 }
 @media (max-width: 767px) {
@@ -3772,6 +3939,30 @@ button,
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    padding: 17px 16px 0;
+    min-width: 146px;
+    padding: 17px 16px 8px;
+  }
+}
+.programs h3::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  bottom: 0;
+  right: -25px;
+  background: url("../img/svg/angle.svg") no-repeat center;
+  background-size: contain;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+@media (max-width: 767px) {
+  .programs h3::after {
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: -19px;
   }
 }
 .programs__text-wrapper {
@@ -3787,7 +3978,22 @@ button,
   padding: 11px 18px 14px 18px;
   border-radius: 0px 12px 12px 12px;
   width: 91%;
+  min-height: 79px;
   word-break: normal;
+}
+@media (max-width: 1199px) {
+  .programs__text-wrapper {
+    width: 92%;
+    padding: 8px 18px 11px;
+    min-height: 76px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__text-wrapper {
+    width: 100%;
+    padding: 13px 18px 13px;
+    min-height: 68px;
+  }
 }
 .programs p {
   font-size: 14px;
@@ -3841,6 +4047,19 @@ button,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-size: 100%;
+  border-radius: 12px;
+}
+@media (max-width: 1199px) {
+  .programs__card {
+    padding-top: 285px;
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .programs__card {
+    padding: 10px;
+    padding-bottom: 19px;
+  }
 }
 .programs__card::before {
   content: "";
@@ -3850,6 +4069,7 @@ button,
   top: 0;
   left: 0;
   background: rgba(49, 109, 194, 0.2);
+  border-radius: 12px;
   z-index: 0;
 }
 .programs__card img {
@@ -3872,6 +4092,17 @@ button,
 }
 .programs .swiper-slide {
   height: auto;
+  min-height: 29vw;
+}
+@media (max-width: 1199px) {
+  .programs .swiper-slide {
+    min-height: 55vw;
+  }
+}
+@media (max-width: 767px) {
+  .programs .swiper-slide {
+    min-height: 125vw;
+  }
 }
 .programs__card-text {
   z-index: 1;

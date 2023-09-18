@@ -51,6 +51,13 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 1,
     spaceBetween: 10,
 
+    scrollbar: {
+      el: '.programs__scrollbar',
+      draggable: true,
+      // dragClass: '.programs__drag',
+      dragSize: '392',
+    },
+
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -59,8 +66,12 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 2.12,
+        spaceBetween: 30,
+
+        scrollbar: {
+          dragSize: '324',
+        },
       },
 
       // when window width is >= 1200px
@@ -76,10 +87,12 @@ window.addEventListener('DOMContentLoaded', () => {
     },
 
     navigation: {
-      nextEl: '.programs__next',
-      prevEl: '.programs__prev',
+      nextEl: '.programs__button-nav--next',
+      prevEl: '.programs__button-nav--prev',
 
     },
+
+
   });
 
 
