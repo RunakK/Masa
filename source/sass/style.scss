@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 8.4.7
 @import "vendor/swiper";
+@import "vendor/data-tabs";
 
 // Global
 // ---------------------------------
@@ -25,11 +26,14 @@
 @import "blocks/custom-select";
 @import "blocks/custom-toggle";
 @import "blocks/data-accordion";
+@import "blocks/filters";
 @import "blocks/header-example";
 @import "blocks/hero";
 @import "blocks/how";
 @import "blocks/modal";
+@import "blocks/news";
 @import "blocks/programs";
+@import "blocks/tabs";
 
 // ---------------------------------
 

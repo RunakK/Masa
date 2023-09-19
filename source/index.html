@@ -466,22 +466,9 @@
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
       <section class="how">
         <div class="container">
-
           <div class="how__wrapper">
-
             <div class="how__heading-wrapper">
               <h2>Как поехать</h2>
               <p>Свяжитесь с&nbsp;координатором, чтобы узнать полную информацию. Вы&nbsp;получите актуальные сведения о&nbsp;доступных программах и&nbsp;городах, в&nbsp;которых можете пройти программу.</p>
@@ -494,8 +481,6 @@
                 <img src="./img/how-desktop.png" srcset="./img/how-desktop@2x.png 2x" width="498" height="363" alt="Столб с указателями в разные города" loading="lazy">
               </picture>
             </div>
-
-
             <div class="how__check">
               <h3>Чтобы получить грант на&nbsp;обучение, вам нужно:</h3>
               <ol class="how__check-list">
@@ -505,8 +490,192 @@
                 <li class="how__check-item">За&nbsp;последние 2&nbsp;года быть не&nbsp;больше 3х&nbsp;месяцев подряд непрерывно в&nbsp;Израиле</li>
               </ol>
             </div>
-
           </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section class="news">
+        <div class="container">
+          <h2>Новости и материалы</h2>
+          <div class="filters">
+            <form class="filters__form" action="index.html" method="get" autocomplete="off">
+              <button type="button" class="filters__button filters__button--active" id="filter-default">По умолчанию</button>
+              <button type="button" class="filters__button" id="volunteer">Случайные</button>
+              <button type="button" class="filters__button" id="filter-discussed">Обсуждаемые</button>
+              <button type="button" class="filters__button" id="filter-career">Карьера</button>
+              <button type="button" class="filters__button" id="filter-trips">Путешествия</button>
+            </form>
+          </div>
+
+
+
+            <div class="swiper news__swiper">
+              <div class="swiper-pagination news__pagination"></div>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper news__wrapper">
+
+
+
+
+
+
+
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="news__card">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news/slide-1-mobile.webp 1x, ./img/news/slide-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news/slide-1-tablet.webp 1x, ./img/news/slide-1-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1440px)" srcset="./img/news/slide-1-desktop.webp 1x, ./img/news/slide-1-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="./img/news/slide-1-mobile.png 1x, ./img/news/slide-1-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="./img/news/slide-1-tablet.png 1x, ./img/news/slide-1-tablet@2x.png 2x">
+                      <source media="(max-width: 1440px)" srcset="./img/news/slide-1-desktop.png 1x, ./img/news/slide-1-desktop@2x.png 2x">
+                      <img loading="lazy" src="./img/news/slide-1-desktop.png" srcset="./img/news/slide-1-desktop@2x.png" width="604" height="400" alt="Две девушки общаются">
+                    </picture>
+                    <div class="news__card-text">
+                      <span>23/03/2023</span>
+                      <h3>Интервью с участницей программы стажировки</h3>
+                      <div class="news__text-wrapper">
+                        <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                        <a href="#" class="btn news__button">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="news__card">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news/slide-2-mobile.webp 1x, ./img/news/slide-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news/slide-2-tablet.webp 1x, ./img/news/slide-2-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1440px)" srcset="./img/news/slide-2-desktop.webp 1x, ./img/news/slide-2-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="./img/news/slide-2-mobile.png 1x, ./img/news/slide-2-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="./img/news/slide-2-tablet.png 1x, ./img/news/slide-2-tablet@2x.png 2x">
+                      <source media="(max-width: 1440px)" srcset="./img/news/slide-2-desktop.png 1x, ./img/news/slide-2-desktop@2x.png 2x">
+                      <img loading="lazy" src="./img/news/slide-2-desktop.png" srcset="./img/news/slide-2-desktop@2x.png" width="604" height="400" alt="Две девушки общаются">
+                    </picture>
+                    <div class="news__card-text">
+                      <span>20/03/2023</span>
+                      <h3>Путешествуем по&nbsp;Израилю</h3>
+                      <div class="news__text-wrapper">
+                        <p>Какие места посещают наши студенты весной</p>
+                        <a href="#" class="btn news__button">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="swiper-slide">
+                  <div class="news__card">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news/slide-3-mobile.webp 1x, ./img/news/slide-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news/slide-3-tablet.webp 1x, ./img/news/slide-3-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1440px)" srcset="./img/news/slide-3-desktop.webp 1x, ./img/news/slide-3-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="./img/news/slide-3-mobile.png 1x, ./img/news/slide-3-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="./img/news/slide-3-tablet.png 1x, ./img/news/slide-3-tablet@2x.png 2x">
+                      <source media="(max-width: 1440px)" srcset="./img/news/slide-3-desktop.png 1x, ./img/news/slide-3-desktop@2x.png 2x">
+                      <img loading="lazy" src="./img/news/slide-3-desktop.png" srcset="./img/news/slide-3-desktop@2x.png" width="604" height="400" alt="Две девушки общаются">
+                    </picture>
+                    <div class="news__card-text">
+                      <span>23/03/2023</span>
+                      <h3>Новая программа волонтёрства</h3>
+                      <div class="news__text-wrapper">
+                        <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
+                        <a href="#" class="btn news__button">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="news__card">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news/slide-4-mobile.webp 1x, ./img/news/slide-4-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news/slide-4-tablet.webp 1x, ./img/news/slide-4-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1440px)" srcset="./img/news/slide-4-desktop.webp 1x, ./img/news/slide-4-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="./img/news/slide-4-mobile.png 1x, ./img/news/slide-4-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="./img/news/slide-4-tablet.png 1x, ./img/news/slide-4-tablet@2x.png 2x">
+                      <source media="(max-width: 1440px)" srcset="./img/news/slide-4-desktop.png 1x, ./img/news/slide-4-desktop@2x.png 2x">
+                      <img loading="lazy" src="./img/news/slide-4-desktop.png" srcset="./img/news/slide-4-desktop@2x.png" width="604" height="400" alt="Две девушки общаются">
+                    </picture>
+                    <div class="news__card-text">
+                      <span>10/03/2023</span>
+                      <h3>Построй свою карьеру</h3>
+                      <div class="news__text-wrapper">
+                        <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                        <a href="#" class="btn news__button">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="news__card">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/news/slide-2-mobile.webp 1x, ./img/news/slide-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/news/slide-2-tablet.webp 1x, ./img/news/slide-2-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1440px)" srcset="./img/news/slide-2-desktop.webp 1x, ./img/news/slide-2-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="./img/news/slide-2-mobile.png 1x, ./img/news/slide-2-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="./img/news/slide-2-tablet.png 1x, ./img/news/slide-2-tablet@2x.png 2x">
+                      <source media="(max-width: 1440px)" srcset="./img/news/slide-2-desktop.png 1x, ./img/news/slide-2-desktop@2x.png 2x">
+                      <img loading="lazy" src="./img/news/slide-2-desktop.png" srcset="./img/news/slide-2-desktop@2x.png" width="604" height="400" alt="Две девушки общаются">
+                    </picture>
+                    <div class="news__card-text">
+                      <span>20/03/2023</span>
+                      <h3>Путешествуем по&nbsp;Израилю</h3>
+                      <div class="news__text-wrapper">
+                        <p>Какие места посещают наши студенты весной</p>
+                        <a href="#" class="btn news__button">
+                          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./img/sprite.svg#arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+
+
 
         </div>
       </section>
@@ -521,10 +690,36 @@
 
 
 
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
