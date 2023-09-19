@@ -238,7 +238,6 @@
         </div>
       </section>
 
-
       <!-- Модалка -->
       <div class="modal modal--preload" data-modal="feedback">
         <div class="modal__wrapper">
@@ -256,14 +255,12 @@
                     <input type="text" name="name" id="name" required>
                   </label>
                 </div>
-
                 <div class="custom-input" data-validate-type="phone" data-on-input-validate="" data-on-input-validate data-required="" data-phone-length="18">
                   <label for="number">
                     Телефон
                     <input type="tel" name="number" id="number" required>
                   </label>
                 </div>
-
                 <div class="custom-select" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
                   <span class="custom-select__label">Выберите город</span>
                   <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
@@ -279,7 +276,6 @@
                     <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Тема 6</li>
                   </ul>
                 </div>
-
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required="">
                   <label>
                     <input type="checkbox" value="user-agreement" name="user-agreement">
@@ -305,6 +301,170 @@
       </div>
 
 
+      <section class="programs" id="programs">
+        <div class="container">
+          <div class="programs__heading">
+            <h2>Программы</h2>
+            <a href="#" class="btn btn--medium">
+              <span>Все программы</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="programs__buttons-wrapper">
+            <div class="programs__button-nav programs__button-nav--prev">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="programs__button-nav programs__button-nav--next">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper programs__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper programs__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="programs__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/programs-1-mobile.webp 1x, ./img/programs/programs-1-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/programs-1-tablet.webp 1x, ./img/programs/programs-1-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1440px)" srcset="./img/programs/programs-1-desktop.webp 1x, ./img/programs/programs-1-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/programs/programs-1-mobile.png 1x, ./img/programs/programs-1-mobile@2x.png 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/programs/programs-1-tablet.png 1x, ./img/programs/programs-1-tablet@2x.png 2x">
+                    <source media="(max-width: 1440px)" srcset="./img/programs/programs-1-desktop.png 1x, ./img/programs/programs-1-desktop@2x.png 2x">
+                    <img loading="lazy" src="./img/programs/programs-1-desktop.png" srcset="./img/programs/programs-1-desktop@2x.png" width="392" height="420" alt="Две девушки общаются">
+                  </picture>
+
+                  <div class="programs__card-text">
+                    <h3>Стажировки</h3>
+                    <div class="programs__text-wrapper">
+                      <p>Получите незаменимый опыт работы в&nbsp;крупнейших израильских компаниях.</p>
+                      <a href="#" class="btn programs__button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="programs__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/programs-2-mobile.webp 1x, ./img/programs/programs-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/programs-2-tablet.webp 1x, ./img/programs/programs-2-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1440px)" srcset="./img/programs/programs-2-desktop.webp 1x, ./img/programs/programs-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/programs/programs-2-mobile.png 1x, ./img/programs/programs-2-mobile@2x.png 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/programs/programs-2-tablet.png 1x, ./img/programs/programs-2-tablet@2x.png 2x">
+                    <source media="(max-width: 1440px)" srcset="./img/programs/programs-2-desktop.png 1x, ./img/programs/programs-2-desktop@2x.png 2x">
+                    <img loading="lazy" src="./img/programs/programs-2-desktop.png" srcset="./img/programs/programs-2-desktop@2x.png" width="392" height="420" alt="Две девушки общаются">
+                  </picture>
+
+                  <div class="programs__card-text">
+                    <h3>Волонтёрство</h3>
+                    <div class="programs__text-wrapper">
+                      <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                      <a href="#" class="btn programs__button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="programs__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/programs-3-mobile.webp 1x, ./img/programs/programs-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/programs-3-tablet.webp 1x, ./img/programs/programs-3-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1440px)" srcset="./img/programs/programs-3-desktop.webp 1x, ./img/programs/programs-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/programs/programs-3-mobile.png 1x, ./img/programs/programs-3-mobile@2x.png 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/programs/programs-3-tablet.png 1x, ./img/programs/programs-3-tablet@2x.png 2x">
+                    <source media="(max-width: 1440px)" srcset="./img/programs/programs-3-desktop.png 1x, ./img/programs/programs-3-desktop@2x.png 2x">
+                    <img loading="lazy" src="./img/programs/programs-3-desktop.png" srcset="./img/programs/programs-3-desktop@2x.png" width="392" height="420" alt="Мужик в очках читает книгу">
+                  </picture>
+
+                  <div class="programs__card-text">
+                    <h3>Учёба</h3>
+                    <div class="programs__text-wrapper">
+                      <p>Получите образование и&nbsp;измените свое будущее.</p>
+                      <a href="#" class="btn programs__button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="programs__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/programs-2-mobile.webp 1x, ./img/programs/programs-2-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/programs-2-tablet.webp 1x, ./img/programs/programs-2-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1440px)" srcset="./img/programs/programs-2-desktop.webp 1x, ./img/programs/programs-2-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/programs/programs-2-mobile.png 1x, ./img/programs/programs-2-mobile@2x.png 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/programs/programs-2-tablet.png 1x, ./img/programs/programs-2-tablet@2x.png 2x">
+                    <source media="(max-width: 1440px)" srcset="./img/programs/programs-2-desktop.png 1x, ./img/programs/programs-2-desktop@2x.png 2x">
+                    <img loading="lazy" src="./img/programs/programs-2-desktop.png" srcset="./img/programs/programs-2-desktop@2x.png" width="392" height="420" alt="Мужик в очках читает">
+                  </picture>
+
+                  <div class="programs__card-text">
+                    <h3>Волонтёрство</h3>
+                    <div class="programs__text-wrapper">
+                      <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                      <a href="#" class="btn programs__button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="programs__card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/programs/programs-3-mobile.webp 1x, ./img/programs/programs-3-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/programs/programs-3-tablet.webp 1x, ./img/programs/programs-3-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1440px)" srcset="./img/programs/programs-3-desktop.webp 1x, ./img/programs/programs-3-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/programs/programs-3-mobile.png 1x, ./img/programs/programs-3-mobile@2x.png 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/programs/programs-3-tablet.png 1x, ./img/programs/programs-3-tablet@2x.png 2x">
+                    <source media="(max-width: 1440px)" srcset="./img/programs/programs-3-desktop.png 1x, ./img/programs/programs-3-desktop@2x.png 2x">
+                    <img loading="lazy" src="./img/programs/programs-3-desktop.png" srcset="./img/programs/programs-3-desktop@2x.png" width="392" height="420" alt="мужик в очках читает книгу">
+                  </picture>
+
+                  <div class="programs__card-text">
+                    <h3>Учёба</h3>
+                    <div class="programs__text-wrapper">
+                      <p>Получите образование и&nbsp;измените свое будущее.</p>
+                      <a href="#" class="btn programs__button">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="programs__nav-wrapper">
+              <div class="swiper-scrollbar programs__scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
