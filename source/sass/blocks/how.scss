@@ -1,0 +1,201 @@
+.how {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+  padding-top: 123px;
+  padding-bottom: 120px;
+  padding-bottom: 107px;
+
+  @include vp-1199 {
+    padding-top: 98px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 69px;
+    padding-bottom: 67px;
+  }
+
+  &__wrapper {
+    padding-right: 8.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 12%;
+
+    @include vp-1199 {
+      grid-template-columns: 1fr;
+      padding-right: 0;
+      row-gap: 40px;
+    }
+
+    @include vp-767 {
+      row-gap: 30px;
+    }
+  }
+
+  &__heading-wrapper {
+
+    & h2 {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 50px;
+      margin: 0;
+      margin-bottom: 30px;
+
+      @include vp-1199 {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 50px;
+        margin-bottom: 28px;
+      }
+
+      @include vp-767 {
+        font-size: 20px;
+        font-style: normal;
+        line-height: 20px;
+        margin-bottom: 13px;
+      }
+    }
+
+    & p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 0;
+      margin-bottom: 33px;
+      color: $color-alabaster;
+
+      @include vp-1199 {
+        font-size: 16px;
+        line-height: 20px;
+        width: 79%;
+        margin-bottom: 36px;
+      }
+
+      @include vp-767 {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+
+    & img {
+      @include vp-1199 {
+        width: 100%
+      }
+    }
+  }
+
+  &__check {
+
+    & ol>li {
+      list-style-type: none;
+      counter-increment: list;
+    }
+
+    & ol>li:before {
+      content: counter(list) " ";
+      position: absolute;
+      left: -20px;
+      top: -16px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.22px;
+      text-transform: uppercase;
+      width: 42px;
+      height: 42px;
+      background-color: $color-cerulean-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include vp-767 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        text-transform: uppercase;
+        width: 28px;
+        height: 32px;
+        left: -14px;
+        top: -7px;
+      }
+    }
+
+    & h3 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 36px;
+      margin: 0;
+      margin-bottom: 55px;
+      padding-top: 5px;
+
+      @include vp-1199 {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 42px;
+      }
+
+      @include vp-767 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__check-list {
+    padding: 0;
+    margin: 0;
+    row-gap: 23px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 21px;
+
+    @include vp-1199 {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 47px;
+      row-gap: 25px;
+      flex-direction: row;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      padding-left: 15px;
+      row-gap: 15px;
+    }
+  }
+
+  &__check-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 22px 25px;
+    padding-right: 63px;
+    position: relative;
+    color: $color-alabaster;
+
+    border-radius: 16px;
+    border: 1px solid $color-alabaster;
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 20px;
+      width: 46.2%;
+      padding: 25px 63px 25px 25px;
+      padding-right: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      width: 100%;
+      padding: 18px 20px 18px 25px;
+    }
+  }
+}
