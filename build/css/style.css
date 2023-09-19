@@ -3785,6 +3785,7 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .programs__buttons-wrapper {
@@ -4002,6 +4003,8 @@ button,
   line-height: 18px;
   margin: 0;
   color: #484848;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

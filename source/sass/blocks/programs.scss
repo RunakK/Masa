@@ -85,6 +85,7 @@
     bottom: 42px;
     right: 100px;
     height: fit-content;
+    z-index: 2;
 
     @include vp-1199 {
       right: 45px;
@@ -279,7 +280,7 @@
     line-height: 18px;
     margin: 0;
     color: $color-charcoal;
-
+    grid-column: 1;
     justify-content: center;
     align-items: center;
     gap: 16px;
