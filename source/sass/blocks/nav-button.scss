@@ -1,0 +1,40 @@
+.nav-button {
+  color: $color-cerulean-blue;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @include hover-focus {
+    background: $color-default-white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+  }
+
+  @include active-no-hover {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    & svg {
+      color: #a9afb7;
+    }
+  }
+
+  & svg {
+    width: 10px;
+    height: 10px;
+    color: $color-cerulean-blue;
+  }
+
+  &--prev {
+    rotate: -135deg;
+  }
+
+  &--next {
+    rotate: 45deg;
+  }
+}

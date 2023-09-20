@@ -138,7 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 10,
 
     pagination: {
@@ -152,25 +152,38 @@ window.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 'auto',
+        slidesPerView: 2,
         spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
       },
 
       // when window width is >= 1200px
       1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 28,
+      },
+
+      1340: {
         slidesPerView: 'auto',
         spaceBetween: 32,
       },
     },
 
     navigation: {
-      nextEl: '.news__button-nav--next',
-      prevEl: '.news__button-nav--prev',
+      nextEl: '.news__button-nav--right',
+      prevEl: '.news__button-nav--left',
 
     },
   });
