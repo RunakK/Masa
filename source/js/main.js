@@ -221,8 +221,8 @@ window.addEventListener('DOMContentLoaded', () => {
       el: '.reviews__scrollbar',
     },
     navigation: {
-      nextEl: '.reviews__next',
-      prevEl: '.reviews__prev',
+      nextEl: '.reviews__button-nav--next',
+      prevEl: '.reviews__button-nav--prev',
     },
   });
 

@@ -789,7 +789,7 @@
               <div class="reviews__person">
                 <picture>
                   <source type="image/webp" srcset="./img/reviews/reviews-1-desktop.webp, ./img/reviews/reviews-1-desktop@2x.webp 2x" width="90" height="90">
-                  <img src="./img/reviews/reviews-1-desktop.jpg" srcset="./img/reviews/reviews-1-desktop@2x.jpg 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
+                  <img src="./img/reviews/reviews`-1-desktop.jpg" srcset="./img/reviews/reviews-1-desktop@2x.jpg 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
                 </picture>
                 <h3 class="reviews__name">Сара Аврахам</h3>
               </div>
@@ -861,21 +861,25 @@
           </li>
         </ul>
       </div>
-      <div class="reviews__controls">
-        <div class="reviews__scrollbar"></div>
-        <div class="reviews__arrows">
-          <button class="reviews__prev arrow" type="button">
-            <svg width="8" height="8" aria-hidden="true" focusable="false">
-              <use href="./img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-          <button class="reviews__next arrow arrow--next" type="button">
-            <svg width="8" height="8" aria-hidden="true" focusable="false">
-              <use href="./img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+
+        <div class="reviews__nav-wrapper">
+          <div class="swiper-scrollbar reviews__scrollbar"></div>
         </div>
-      </div>
+
+        <div class="reviews__buttons-wrapper">
+          <div class="reviews__button-nav reviews__button-nav--prev">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="reviews__button-nav reviews__button-nav--next">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+
+
     </div>
   </section>
 

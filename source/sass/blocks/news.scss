@@ -229,8 +229,8 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      bottom: -1px;
-      right: -19px;
+      bottom: -3px;
+      right: -17px;
       background: url("../img/svg/angle-gray.svg") no-repeat center;
       background-size: contain;
       transform: rotate(-90deg);
@@ -292,8 +292,8 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      bottom: -1px;
-      right: -19px;
+      bottom: -3px;
+      right: -17px;
       background: url("../img/svg/angle-gray.svg") no-repeat center;
       background-size: contain;
       transform: rotate(-90deg);
@@ -434,8 +434,8 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        bottom: -1px;
-        right: -19px;
+        bottom: -3px;
+      right: -17px;
         background: url("../img/svg/angle-gray.svg") no-repeat center;
         background-size: contain;
         transform: rotate(-90deg);
@@ -549,11 +549,14 @@
   & .swiper-slide {
     height: auto;
     min-height: 28vw;
-    width: 22.9%;
+    // width: 20vw;
+    max-width: 286px;
+
 
     @include vp-1199 {
       min-height: 45.6vw;
       margin-right: 30px;
+      max-width: 100%;
     }
 
     @include vp-767 {
@@ -562,8 +565,13 @@
   }
 
   .swiper-slide:first-child {
-    width: 48.7%;
+    // width: 48.7%;
+    // width: 42vw;
     max-width: 604px;
+
+    @include vp-1199 {
+      max-width: 100%;
+    }
 
     @include vp-767 {
       min-height: 103.3vw;
@@ -572,6 +580,7 @@
     & .news__text-wrapper {
       width: 64.5%;
       min-width: 207px;
+
 
       @include vp-1199 {
         width: 74%;
@@ -605,35 +614,5 @@
       height: auto;
     }
   }
-
-  // &__count {
-  //   &--first {
-  //     @include vp-1199 {
-  //       order: -4;
-  //     }
-  //   }
-
-  //   &--second {
-  //     @include vp-1199 {
-  //       order: -3;
-  //     }
-  //   }
-
-  //   &--third {
-  //     @include vp-1199 {
-  //       order: -1;
-  //     }
-  //   }
-
-  //   &--fourth {
-  //     @include vp-1199 {
-  //       order: -2;
-  //     }
-  //   }
-  // }
-
-  // & .swiper-grid {
-  //   height: 107vw;
-  // }
 
 }
