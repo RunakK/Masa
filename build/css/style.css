@@ -2137,6 +2137,121 @@ button,
   }
 }
 
+.contacts {
+  background-color: #316dc2;
+  color: #ffffff;
+}
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 119px;
+  padding-bottom: 120px;
+  gap: 73px 0;
+}
+.contacts__heading-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts__heading-container::before {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.contacts h2 {
+  margin: 5px 0 0;
+  color: inherit;
+}
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 604px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 15px 51px;
+}
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 269px;
+  gap: 15px 0;
+}
+.contacts__text {
+  margin: 0;
+  color: #ffffff;
+}
+.contacts__text--link {
+  position: relative;
+  outline: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.contacts__text--link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .contacts__text--link:hover:not(.focus-visible)::before {
+    opacity: 1;
+  }
+}
+.contacts__text--link.focus-visible:focus::before {
+  opacity: 1;
+}
+.contacts__text--link.focus-visible:active {
+  opacity: 0.8;
+}
+.contacts__text--link.focus-visible:active::before {
+  opacity: 0;
+}
+.contacts__header {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12px;
+  opacity: 0.8;
+}
+.contacts__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;

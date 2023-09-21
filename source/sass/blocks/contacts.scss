@@ -1,0 +1,104 @@
+.contacts {
+  background-color: $color-cerulean-blue;
+  color: $color-default-white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 119px;
+    padding-bottom: 120px;
+    gap: 73px 0;
+  }
+
+  &__heading-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -33px;
+      width: 100%;
+      height: 2px;
+      background-color: rgba($color-default-white, 0.2);
+    }
+
+  }
+
+  & h2 {
+    margin: 5px 0 0;
+    color: inherit;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 604px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 15px 51px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 269px;
+    gap: 15px 0;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-default-white;
+
+    &--link {
+      position: relative;
+      outline: none;
+      transition: opacity $trans-default;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-default-white;
+        opacity: 0;
+        transition: opacity $trans-default;
+      }
+
+      @include hover-focus {
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      @include active {
+        opacity: 0.8;
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    opacity: 0.8;
+  }
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+  }
+
+}
