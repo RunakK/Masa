@@ -20,6 +20,7 @@
     @include vp-767 {
       font-size: 20px;
       line-height: 20px;
+      margin-bottom: 31px;
     }
   }
 
@@ -60,7 +61,7 @@
     }
 
     @include vp-767 {
-      top: -2px;
+      top: 33px;
       right: 14px;
     }
   }
@@ -162,6 +163,7 @@
       position: relative;
       padding-top: 35px;
       padding-bottom: 27px;
+      padding-right: 15px;
     }
   }
 

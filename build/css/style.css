@@ -5660,6 +5660,7 @@ button,
   .reviews h2 {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 31px;
   }
 }
 .reviews__nav-wrapper {
@@ -5715,7 +5716,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__buttons-wrapper {
-    top: -2px;
+    top: 33px;
     right: 14px;
   }
 }
@@ -5831,6 +5832,7 @@ button,
     position: relative;
     padding-top: 35px;
     padding-bottom: 27px;
+    padding-right: 15px;
   }
 }
 .reviews__slider {
