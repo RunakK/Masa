@@ -5145,6 +5145,7 @@ button,
 }
 .news .swiper-slide:first-child {
   width: 48.7%;
+  max-width: 604px;
 }
 @media (max-width: 767px) {
   .news .swiper-slide:first-child {

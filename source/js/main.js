@@ -140,6 +140,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loop: false,
     slidesPerView: 'auto',
     spaceBetween: 10,
+    updateOnWindowResize: true,
 
     pagination: {
       el: '.news__pagination',
@@ -163,6 +164,7 @@ window.addEventListener('DOMContentLoaded', () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+        updateOnWindowResize: true,
         grid: {
           rows: 2,
           fill: 'row',
@@ -171,13 +173,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // when window width is >= 1200px
       1200: {
+        updateOnWindowResize: true,
         slidesPerView: 'auto',
         spaceBetween: 28,
+        grid: {
+          rows: 1,
+          fill: 'row',
+        },
       },
 
       1340: {
+        updateOnWindowResize: true,
         slidesPerView: 'auto',
         spaceBetween: 32,
+        grid: {
+          rows: 1,
+          fill: 'row',
+        },
       },
     },
 
@@ -185,6 +197,32 @@ window.addEventListener('DOMContentLoaded', () => {
       nextEl: '.news__button-nav--right',
       prevEl: '.news__button-nav--left',
 
+    },
+  });
+
+  const reviews = new Swiper('.reviews__swiper', {
+    direction: 'horizontal',
+    loop: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+    },
+    scrollbar: {
+      el: '.reviews__scrollbar',
+    },
+    navigation: {
+      nextEl: '.reviews__next',
+      prevEl: '.reviews__prev',
     },
   });
 
