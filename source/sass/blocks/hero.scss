@@ -227,11 +227,22 @@
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
+      border: 1px solid $color-cerulean-blue;
+      background-color: transparent;
+      opacity: 1;
 
       @include vp-767 {
         width: 8px;
         height: 8px;
       }
+
+      @include hover-focus {
+        outline: none;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $color-cerulean-blue;
     }
 
     &::after {

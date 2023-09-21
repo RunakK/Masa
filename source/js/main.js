@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/header';
 import './modules/accordion';
+import './modules/tabs';
 import './modules/select';
 
 // ---------------------------------
@@ -91,10 +92,101 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.programs__button-nav--prev',
 
     },
-
-
   });
 
+  // Функция для переключения кнопок фильтрации
+
+  const imgFilters = document.querySelector('.filters');
+  const filterDefault = imgFilters.querySelector('#filter-default');
+  const filterVolunteer = imgFilters.querySelector('#volunteer');
+  const filterDiscussed = imgFilters.querySelector('#filter-discussed');
+  const filterСareer = imgFilters.querySelector('#filter-career');
+  const filterTrips = imgFilters.querySelector('#filter-trips');
+
+  const chooseFilter = (filterType) => {
+    filterDefault.classList.remove('filters__button--active');
+    filterVolunteer.classList.remove('filters__button--active');
+    filterDiscussed.classList.remove('filters__button--active');
+    filterСareer.classList.remove('filters__button--active');
+    filterTrips.classList.remove('filters__button--active');
+    filterType.classList.add('filters__button--active');
+  };
+
+  const setListenersOnFilters = () => {
+    filterDefault.addEventListener('click', (evt) => {
+      chooseFilter(evt.target);
+    });
+
+    filterVolunteer.addEventListener('click', (evt) => {
+      chooseFilter(evt.target);
+    });
+
+    filterDiscussed.addEventListener('click', (evt) => {
+      chooseFilter(evt.target);
+    });
+    filterСareer.addEventListener('click', (evt) => {
+      chooseFilter(evt.target);
+    });
+    filterTrips.addEventListener('click', (evt) => {
+      chooseFilter(evt.target);
+    });
+  };
+
+  setListenersOnFilters();
+
+  const news = new Swiper('.news__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+
+    pagination: {
+      el: '.news__pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row',
+        },
+      },
+
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 28,
+      },
+
+      1340: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+      },
+    },
+
+    navigation: {
+      nextEl: '.news__button-nav--right',
+      prevEl: '.news__button-nav--left',
+
+    },
+  });
 
   // ---------------------------------
 
