@@ -31,14 +31,12 @@
       margin-left: auto;
       padding: 10px;
       width: 100%;
-
-      border-radius: 5px;
       outline: none;
 
       // transition: border 0.3s ease;
 
       border-radius: 8px;
-      border: 1px solid rgba(72, 72, 72, 0.30);
+      border: 1px solid rgba(72, 72, 72, 0.3);
       height: 50px;
 
       @media screen and (max-width: 767px) {
@@ -56,8 +54,8 @@
       }
 
       &:disabled {
-        border: 1px solid rgba(169, 175, 183, 0.50);
-        background: rgba(169, 175, 183, 0.20);
+        border: 1px solid rgba(169, 175, 183, 0.5);
+        background: rgba(169, 175, 183, 0.2);
       }
     }
   }
@@ -70,11 +68,10 @@
 
 
   &--secondary {
-
     & input,
     textarea {
       border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, .3);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       height: 50px;
       background-color: transparent;
 
@@ -87,8 +84,8 @@
       }
 
       &:disabled {
-        border: 1px solid rgba(169, 175, 183, 0.50);
-        background: rgba(169, 175, 183, 0.20);
+        border: 1px solid rgba(169, 175, 183, 0.5);
+        background: rgba(169, 175, 183, 0.2);
       }
     }
   }
@@ -99,8 +96,8 @@
     bottom: 35px;
 
     color: #ff1553;
-    border: 1px solid var(--state-error, #FF5E66);
-    background: rgba(255, 94, 102, 0.20);
+    border: 1px solid var(--state-error, #ff5e66);
+    background: rgba(255, 94, 102, 0.2);
 
     transition: opacity 0.3s ease;
 
@@ -110,11 +107,10 @@
   }
 
   &.is-invalid {
-
     input,
     textarea {
       border: 1px solid #ff1553;
-      background: rgba(255, 94, 102, 0.20);
+      background: rgba(255, 94, 102, 0.2);
 
       &:focus,
       &:hover {

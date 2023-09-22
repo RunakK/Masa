@@ -1,5 +1,5 @@
 /* locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-
+/* eslint-disable */
 const LocomotiveScroll = () => {
   (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -3159,4 +3159,3 @@ const LocomotiveScroll = () => {
 };
 
 export default LocomotiveScroll();
-

@@ -15,6 +15,7 @@
 
   &__content {
     padding-top: 3px;
+
     @include vp-1199 {
       padding-top: 6px;
     }
@@ -35,7 +36,7 @@
     padding: 0;
   }
 
-  &__element.is-active>&__button {
+  &__element.is-active > &__button {
     opacity: 1;
 
     &::after {
@@ -45,8 +46,7 @@
     }
   }
 
-  &__element>&__button--icon {
-
+  &__element > &__button--icon {
     &::after {
       display: block;
       rotate: 135deg;
@@ -56,7 +56,6 @@
 
 
   &__button {
-    width: 100%;
     padding: 0;
     border: none;
     display: flex;

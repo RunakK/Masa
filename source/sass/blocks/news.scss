@@ -46,7 +46,6 @@
       position: absolute;
       top: 0;
       margin: 0;
-
     }
   }
 
@@ -154,16 +153,6 @@
     }
   }
 
-  &__button.btn {
-    padding-top: 14px;
-    padding-bottom: 14px;
-
-    @include vp-767 {
-      padding-left: 19px;
-      padding-right: 58px;
-    }
-  }
-
 
   & h2 {
     font-size: 50px;
@@ -192,12 +181,9 @@
     font-weight: 400;
     line-height: 26px;
     color: $color-cerulean-blue;
-    margin: 0;
-    margin-bottom: 21px;
     background-color: $color-alabaster;
     margin: 0;
     margin-bottom: -1px;
-    padding: 0;
     border-radius: 0 12px 0 0;
     min-width: 194px;
     width: 76%;
@@ -218,7 +204,6 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 18px;
-      padding: 17px 16px 0;
       min-width: 200px;
       width: 64%;
       padding: 11px 16px 4px 0;
@@ -245,7 +230,6 @@
   }
 
 
-
   &__filters {
     margin-bottom: 40px;
 
@@ -268,13 +252,12 @@
     align-items: center;
     padding: 0;
     padding-right: 17px;
-    border-radius: 0px 12px 0 12px;
+    border-radius: 0 12px 0 12px;
     width: 84.5%;
     word-break: normal;
     position: relative;
 
     @include vp-1199 {
-      width: 92%;
       width: 74%;
       min-width: 207px;
       padding: 7px 18px 11px 0;
@@ -318,7 +301,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    border-radius: 0px 12px 12px 12px;
+    border-radius: 0 12px 12px 12px;
     padding: 7px 0 16px 0;
 
     @include vp-1199 {
@@ -353,8 +336,6 @@
       padding-top: 105px;
       display: flex;
     }
-
-    @include vp-767 {}
 
     & img {
       position: absolute;
@@ -415,7 +396,7 @@
       word-break: normal;
       position: relative;
       display: block;
-      padding: 12px 12px 6px 0px;
+      padding: 12px 12px 6px 0;
 
       @include vp-1199 {
         font-size: 12px;
@@ -427,15 +408,13 @@
         padding: 11px 12px 5px 0;
       }
 
-      @include vp-767 {}
-
       &::after {
         content: "";
         position: absolute;
         width: 20px;
         height: 20px;
         bottom: -3px;
-      right: -17px;
+        right: -17px;
         background: url("../img/svg/angle-gray.svg") no-repeat center;
         background-size: contain;
         transform: rotate(-90deg);
@@ -458,6 +437,11 @@
 
     @include vp-1199 {
       margin-top: 0;
+    }
+
+    @include vp-767 {
+      padding-left: 19px;
+      padding-right: 58px;
     }
 
     & svg {
@@ -485,7 +469,6 @@
     }
 
     & .swiper-pagination-bullet {
-      padding: 5px 10px;
       border-radius: 0;
       width: 32px;
       height: 32px;
@@ -493,8 +476,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      line-height: 30px;
-      font-size: 12px;
       color: $color-cerulean-blue;
       opacity: 0.5;
       background: transparent;
@@ -523,7 +504,6 @@
         background: #275699;
         color: $color-default-white;
       }
-
     }
 
     & .swiper-pagination-bullet-active {
@@ -614,5 +594,4 @@
       height: auto;
     }
   }
-
 }

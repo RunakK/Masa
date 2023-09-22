@@ -2,7 +2,6 @@
   background-color: $color-cerulean-blue;
   color: $color-default-white;
   padding-top: 123px;
-  padding-bottom: 120px;
   padding-bottom: 107px;
 
   @include vp-1199 {
@@ -34,7 +33,6 @@
   }
 
   &__heading-wrapper {
-
     & h2 {
       font-size: 50px;
       font-weight: 400;
@@ -83,19 +81,18 @@
 
     & img {
       @include vp-1199 {
-        width: 100%
+        width: 100%;
       }
     }
   }
 
   &__check {
-
-    & ol>li {
+    & ol > li {
       list-style-type: none;
       counter-increment: list;
     }
 
-    & ol>li:before {
+    & ol > li::before {
       content: counter(list) " ";
       position: absolute;
       left: -20px;

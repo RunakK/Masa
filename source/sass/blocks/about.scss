@@ -1,5 +1,4 @@
 .about {
-
   &__heading {
     display: flex;
     flex-direction: column;
@@ -163,7 +162,6 @@
     @include vp-767 {
       display: flex;
       flex-direction: column;
-      row-gap: 22px;
       padding-top: 42px;
       padding-left: 20px;
       padding-right: 30px;
@@ -210,7 +208,7 @@
       width: 42px;
       height: 42px;
       background-color: $color-cerulean-blue;
-      background-image: url(../img/svg/star.svg);
+      background-image: url("../img/svg/star.svg");
       color: $color-default-white;
       background-size: 22px 22px;
       background-repeat: no-repeat;
@@ -223,7 +221,6 @@
         left: -21px;
         top: -22px;
       }
-
     }
 
     &--right {
@@ -234,7 +231,6 @@
         padding-right: 16px;
       }
     }
-
 
 
     & h4 {

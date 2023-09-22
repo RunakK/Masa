@@ -56,7 +56,6 @@
       & label {
         display: flex;
         flex-direction: column;
-        font-family: Manrope;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
@@ -113,8 +112,6 @@
             height: 49px;
           }
         }
-
-
       }
 
       span.custom-toggle__lable {
@@ -136,7 +133,7 @@
       border-radius: 16px;
 
       @include vp-1199 {
-        height: -webkit-fill-available;
+        height: fill-available;
       }
 
       @include vp-767 {
@@ -208,7 +205,6 @@
   }
 
 
-
   &__button {
     margin: 0 auto;
     padding: 18px 80px 18px 30px;
@@ -226,11 +222,10 @@
   }
 
   .custom-textarea {
-
     & textarea {
       background-color: transparent;
       height: 100px;
-      border: 1px solid rgba(169, 175, 183, 0.50);
+      border: 1px solid rgba(169, 175, 183, 0.5);
     }
 
     @include vp-767 {

@@ -5,10 +5,8 @@ import './modules/header';
 import './modules/accordion';
 import './modules/tabs';
 import './modules/select';
-// import './vendor/leaflet/leaflet';
-// import {map as createMap, tileLayer as createTitleLayers, icon as createIcon, marker as createMarker} from './vendor/leaflet/leaflet';
 import './vendor/leaflet/leaflet';
-
+/* eslint-disable */
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
