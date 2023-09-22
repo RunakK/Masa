@@ -19,7 +19,7 @@
     padding: 0;
 
     @media screen and (max-width: 767px) {
-      padding: 14px 0 10px 0;
+      padding: 0 0 10px 0;
     }
   }
 
@@ -50,7 +50,12 @@
     span {
       margin-bottom: 0;
       margin-left: 0;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px;
     }
+
   }
 
   &--checkbox {
@@ -96,6 +101,33 @@
 
         transition: background-color 0.3s ease;
       }
+
+      &--secondary {
+        opacity: 1;
+        top: 5px;
+
+        &::before {
+          background-color: transparent;
+          border-radius: 2px;
+          border: 1px solid rgba(255, 255, 255, 0.60);
+        }
+
+        @include hover-focus {
+          border: 1px solid rgb(255, 255, 255);
+        }
+
+        &:disabled {
+          border: 1px solid #ffffff;
+          background: rgba(255, 255, 255, 0.60);
+        }
+
+      }
+    }
+  }
+
+  &--secondary {
+    label {
+      padding-top: 8px;
     }
   }
 
@@ -132,11 +164,26 @@
   }
 
   input:checked+.custom-toggle__icon {
-    border: 1.5px solid #2c39f2;
+    border: 1px solid $color-default-white;
+    background-color: $color-default-white;
 
     &::before {
       // background-color: #2c39f2;
-      background: url(../../img/svg/checkbox.svg) no-repeat center;
+      // background: url(../../img/svg/checkbox.svg) no-repeat center;
+      background: url(../../img/svg/checked.svg) no-repeat center;
+      background-color: $color-default-white;
+    }
+
+    @include hover-focus {
+      &::before {
+        background: url(../../img/svg/checkbox.svg) no-repeat center;
+      }
+    }
+
+    &:disabled {
+      &::before {
+        background: url(../../img/svg/checked-disabled.svg) no-repeat center;
+      }
     }
   }
 

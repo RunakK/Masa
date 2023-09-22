@@ -1,0 +1,261 @@
+.feedback {
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 44px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100%;
+
+    @include vp-1199 {
+      padding-top: 0;
+    }
+
+    @include vp-767 {
+      padding: 23px 0;
+    }
+
+    & form {
+      background-color: $color-cerulean-blue;
+      color: $color-alabaster;
+      padding: 70px 74px;
+      max-width: 498px;
+      padding-top: 82px;
+      padding-bottom: 46px;
+      border-radius: 16px;
+
+      @include vp-1199 {
+        padding: 60px 45px 52px 45px;
+        max-width: fit-content;
+        width: 65%;
+      }
+
+      @include vp-767 {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 51px;
+        padding-bottom: 30px;
+      }
+
+      & label {
+        display: flex;
+        flex-direction: column;
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        opacity: 0.8;
+
+        @include vp-767 {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          gap: 11px;
+        }
+      }
+
+      & input {
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        height: 50px;
+        background-color: transparent;
+
+        @include vp-767 {
+          margin-bottom: 8px;
+        }
+      }
+
+      .custom-toggle--checkbox {
+        label {
+          opacity: 1;
+        }
+      }
+
+      .custom-select {
+        gap: 12px;
+        margin-bottom: 16px;
+
+        @include vp-767 {
+          margin-top: 21px;
+        }
+
+        .custom-toggle__icon {
+          top: 2px;
+        }
+
+        .custom-select__label {
+          @include vp-767 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+          }
+        }
+
+        .custom-select__button {
+          @include vp-767 {
+            height: 49px;
+          }
+        }
+
+
+      }
+
+      span.custom-toggle__lable {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      object-fit: cover;
+      width: 100%;
+      background-color: #00359f;
+      height: 100%;
+      border-radius: 16px;
+
+      @include vp-1199 {
+        height: -webkit-fill-available;
+      }
+
+      @include vp-767 {
+        display: none;
+      }
+    }
+  }
+
+  & h2 {
+    margin: 0 0 25px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      margin: 0 0 28px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 17px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  & p {
+    margin: 0 0 19px;
+    opacity: 0.9;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      margin: 0 0 32px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 26px;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    width: 510px;
+    padding: 55px 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+
+    background-color: $color-default-white;
+
+    @include vp-1199 {
+      gap: 23px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 20px;
+      padding-top: 37px;
+      padding-left: 14px;
+      padding-right: 14px;
+      gap: 18px;
+    }
+  }
+
+
+
+  &__button {
+    margin: 0 auto;
+    padding: 18px 80px 18px 30px;
+    margin-bottom: 5px;
+    width: 100%;
+    justify-content: center;
+
+    @include vp-767 {
+      width: 100%;
+      padding: 14px 80px 14px 30px;
+      margin-bottom: 20px;
+      justify-content: center;
+      padding-left: 41px;
+    }
+  }
+
+  .custom-textarea {
+
+    & textarea {
+      background-color: transparent;
+      height: 100px;
+      border: 1px solid rgba(169, 175, 183, 0.50);
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      height: 119px;
+    }
+  }
+
+  .custom-textarea__label {
+    @include vp-767 {
+      margin-bottom: 0;
+    }
+  }
+
+  .custom-toggle {
+    margin-bottom: 44px;
+
+    @include vp-767 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .custom-textarea--secondary {
+    @include vp-1199 {
+      margin-bottom: 14px;
+    }
+  }
+}

@@ -268,12 +268,12 @@
                     <span class="custom-select__icon"></span>
                   </button>
                   <ul class="custom-select__list" role="listbox">
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Тема 1</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Тема 2</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Тема 3</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Тема 4</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Тема 5</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Тема 6</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
                   </ul>
                 </div>
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required="">
@@ -886,21 +886,21 @@
           </div>
         </div>
       </div>
-        <div class="reviews__nav-wrapper">
-          <div class="swiper-scrollbar reviews__scrollbar"></div>
+      <div class="reviews__nav-wrapper">
+        <div class="swiper-scrollbar reviews__scrollbar"></div>
+      </div>
+      <div class="reviews__buttons-wrapper">
+        <div class="reviews__button-nav reviews__button-nav--prev">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/sprite.svg#arrow"></use>
+          </svg>
         </div>
-        <div class="reviews__buttons-wrapper">
-          <div class="reviews__button-nav reviews__button-nav--prev">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#arrow"></use>
-            </svg>
-          </div>
-          <div class="reviews__button-nav reviews__button-nav--next">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#arrow"></use>
-            </svg>
-          </div>
+        <div class="reviews__button-nav reviews__button-nav--next">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <use href="./img/sprite.svg#arrow"></use>
+          </svg>
         </div>
+      </div>
     </div>
   </section>
 
@@ -937,6 +937,74 @@
       </div>
     </div>
   </section>
+
+
+
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__wrapper" data-form-validate data-callback="base">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <h2>Напишите нам</h2>
+          <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
+          <div class="custom-input custom-input--secondary" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+            <label for="name">Имя<input type="text" name="name" id="name" required>
+            </label>
+          </div>
+          <div class="custom-input custom-input--secondary" data-validate-type="phone" data-on-input-validate="" data-on-input-validate data-required="" data-phone-length="18">
+            <label for="number">
+              Телефон
+              <input type="tel" name="number" id="number" required>
+            </label>
+          </div>
+          <div class="custom-textarea custom-textarea--secondary" data-validate-type="text" data-required>
+            <label>
+              <span class="custom-textarea__label">Ваше сообщение</span>
+              <textarea name="message" rows="5" cols="25"></textarea>
+            </label>
+          </div>
+          <div class="custom-select custom-select--secondary" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
+            <span class="custom-select__label">Выберите город</span>
+            <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+              <span class="custom-select__text"></span>
+              <span class="custom-select__icon"></span>
+            </button>
+            <ul class="custom-select__list" role="listbox">
+              <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
+              <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
+            </ul>
+          </div>
+          <div class="custom-toggle custom-toggle--checkbox custom-toggle--secondary" data-validate-type="checkbox" data-required="">
+            <label>
+              <input type="checkbox" value="user-agreement" name="user-agreement">
+              <span class="custom-toggle__icon custom-toggle__icon--secondary"></span>
+              <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+            </label>
+          </div>
+          <button class="btn btn--blue feedback__button" type="submit">
+            <span>Отправить</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </form>
+        <picture>
+          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/feedback-tablet.webp, ./img/feedback-tablet@2x.webp 2x" width="678" height="780">
+          <source type="image/webp" srcset="./img/feedback-desktop.webp, ./img/feedback-desktop@2x.webp 2x" width="1240" height="803">
+          <source media="(max-width: 1199px)" srcset="./img/feedback-tablet.png, ./img/feedback-tablet@2x.png 2x" width="678" height="780">
+          <img src="./img/feedback-desktop.jpg" srcset="./img/feedback-desktop@2x.png 2x" width="1240" height="803" alt="Домик на берегу" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
 
 

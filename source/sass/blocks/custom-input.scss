@@ -17,6 +17,7 @@
     align-items: flex-start;
     width: 100%;
     gap: 7px;
+    flex-direction: column;
 
     @media screen and (max-width: 767px) {
       align-items: flex-start;
@@ -64,6 +65,31 @@
   &__label {
     @media screen and (max-width: 767px) {
       margin: 0 0 18px 0;
+    }
+  }
+
+
+  &--secondary {
+
+    & input,
+    textarea {
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      height: 50px;
+      background-color: transparent;
+
+      @include hover {
+        border: 1px solid $color-default-white;
+      }
+
+      @include focus {
+        border: 1px solid $color-default-white;
+      }
+
+      &:disabled {
+        border: 1px solid rgba(169, 175, 183, 0.50);
+        background: rgba(169, 175, 183, 0.20);
+      }
     }
   }
 
