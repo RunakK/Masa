@@ -26,9 +26,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const overlay = document.querySelector('.header-example__overlay');
   overlay.addEventListener('click', () => {
-    button.classList.toggle('btn--blue');
+    button.classList.remove('btn--blue');
   });
 
+  let closeMenuHead = document.querySelector('[data-close-menu]');
+  closeMenuHead.addEventListener('click', () => {
+    button.classList.remove('btn--blue');
+  });
 
   const hero = new Swiper('.hero__swiper', {
     // Optional parameters

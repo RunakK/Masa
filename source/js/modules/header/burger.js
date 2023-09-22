@@ -14,6 +14,7 @@ export class Burger {
     this._onDocumentClick = this._onDocumentClick.bind(this);
   }
 
+
   init() {
     if (!this._burger) {
       return;
@@ -38,6 +39,8 @@ export class Burger {
     this._isMenuOpen = false;
     this._header.classList.remove('is-open');
     this._scrollLock.enableScrolling();
+    const button = document.querySelector('.header-example__burger');
+    button.classList.remove('btn--blue');
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
     document.removeEventListener('click', this._onDocumentClick);
