@@ -5,6 +5,9 @@ import './modules/header';
 import './modules/accordion';
 import './modules/tabs';
 import './modules/select';
+// import './vendor/leaflet/leaflet';
+// import {map as createMap, tileLayer as createTitleLayers, icon as createIcon, marker as createMarker} from './vendor/leaflet/leaflet';
+import './vendor/leaflet/leaflet';
 
 // ---------------------------------
 
@@ -225,6 +228,21 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.reviews__button-nav--prev',
     },
   });
+
+
+  //Карта
+
+  const map = L.map('map').setView([55.028527396640804, 82.92824989073691], 17);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar', attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+  const greenIcon = L.icon({
+    iconUrl: './img/svg/pin.svg',
+    iconSize: [70, 70], // size of the icon
+  });
+
+  L.marker([55.028527396640804, 82.92824989073691], {icon: greenIcon}).addTo(map);
+
 
   // ---------------------------------
 
