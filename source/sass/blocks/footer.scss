@@ -72,17 +72,19 @@
     }
   }
 
-  &__nav-link {
-    padding: 2px;
-    outline: none;
-    transition: color $trans-default;
+  &__nav-item {
+    a {
+      padding: 2px;
+      outline: none;
+      transition: color $trans-default;
 
-    @include hover-focus {
-      color: $color-cerulean-blue;
-    }
+      @include hover-focus {
+        color: $color-cerulean-blue;
+      }
 
-    @include active {
-      color: $color-endeavour;
+      @include active {
+        color: $color-endeavour;
+      }
     }
   }
 
@@ -166,16 +168,17 @@
       align-items: center;
       line-height: 14px;
     }
-  }
 
-  &__copyright {
-    margin: 4px 0 0;
+    p {
+      margin: 4px 0 0;
 
-    @include vp-1199 {
-      margin: 0;
-      opacity: 0.6;
+      @include vp-1199 {
+        margin: 0;
+        opacity: 0.6;
+      }
     }
   }
+
 
   &__link-politics {
     position: relative;
