@@ -26,7 +26,7 @@
   &.is-open {
     .header-example__overlay {
       position: fixed;
-      background: rgba(13, 29, 51, 0.40);
+      background: rgba(13, 29, 51, 0.4);
       top: 0;
       width: 100%;
       height: 100vh;
@@ -110,7 +110,6 @@
   }
 
   &__nav {
-    visibility: hidden;
     width: 286px;
     background-color: transparent;
     bottom: 0;
@@ -119,7 +118,7 @@
     left: 0;
     opacity: 0;
     margin: 0;
-    padding: 80px 0 20px 0px;
+    padding: 80px 0 20px 0;
     padding-top: 90px;
     position: fixed;
     pointer-events: none;
@@ -141,7 +140,6 @@
 
     @include vp-767 {
       width: 90%;
-      right: 15px;
       margin: 0 auto;
       right: 0;
       max-height: 90vh;
@@ -175,15 +173,11 @@
       }
 
       @include vp-767 {
-        width: 90%;
-        right: 15px;
         margin: 0 auto;
-        right: 0;
         max-height: 90vh;
         padding-bottom: 0;
         height: fit-content;
         top: -10px;
-        width: calc(100% - 30px);
         right: 0;
         padding-top: 68px;
         width: 100%;
@@ -290,7 +284,7 @@
     background-color: $color-default-white;
     position: relative;
     z-index: 25;
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.5s cubic-bezier(0.07, 0.82, 0.17, 1);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 69px;

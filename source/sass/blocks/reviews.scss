@@ -28,26 +28,6 @@
     }
   }
 
-  &__nav-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 52px;
-
-    @include vp-1199 {
-      padding-right: 45px;
-    }
-
-    @include vp-767 {
-      width: fit-content;
-      position: absolute;
-      top: 0;
-      margin: 0;
-
-    }
-  }
-
   &__buttons-wrapper {
     display: flex;
     gap: 10px;
@@ -149,7 +129,6 @@
       position: absolute;
       top: 0;
       margin: 0;
-
     }
   }
 

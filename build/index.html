@@ -32,69 +32,70 @@
             <span class="header-example__burger-text">Меню</span>
             <span class="header-example__icon"></span>
           </button>
-          <nav class="header-example__nav data-close-menu">
+          <div class="header-example__nav data-close-menu">
             <div class="header-example__list">
               <div class="accordion" data-accordion="parent" data-single="data-single" data-close-inner="data-close-inner">
                 <div class="accordion__element">
-                  <a href="#">О проекте</a>
+                  <a href="#about" data-close-menu>О проекте</a>
                 </div>
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button accordion__button--icon" type="button" data-accordion="button">Программы</button>
                   <div class="accordion__content" data-accordion="content">
                     <ul class="accordion__wrapper">
                       <li class="accordion__item">
-                        <a href="#">Стажировки</a>
+                        <a href="#" data-close-menu>Стажировки</a>
                       </li>
                       <li class="accordion__item">
-                        <a href="#">Волонтёрство</a>
+                        <a href="#" data-close-menu>Волонтёрство</a>
                       </li>
                       <li class="accordion__item">
-                        <a href="#">Учёба</a>
+                        <a href="#" data-close-menu>Учёба</a>
                       </li>
                       <li class="accordion__item">
-                        <a href="#">Религия</a>
+                        <a href="#" data-close-menu>Религия</a>
                       </li>
-                      </г>
+                    </ul>
                   </div>
                 </div>
-                <div class="accordion__element">
-                  <a href="#" class="accordion__button accordion__button">Как поехать</a>
+                <div class="accordion__element" data-close-menu>
+                  <a href="#how" class="accordion__button accordion__button" data-close-menu>Как поехать</a>
                 </div>
-                <div class="accordion__element">
-                  <a href="#" class="accordion__button accordion__button">Отзывы</a>
+                <div class="accordion__element" data-close-menu>
+                  <a href="#reviews" class="accordion__button accordion__button" data-close-menu>Отзывы</a>
                 </div>
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button accordion__button--icon" type="button" data-accordion="button">Новости</button>
                   <div class="accordion__content" data-accordion="content">
                     <ul class="accordion__wrapper">
                       <li class="accordion__item">
-                        <a href="#">Общее</a>
+                        <a href="#filter-default" data-close-menu>Общее</a>
                       </li>
-                      <li class="accordion__item">
-                        <a href="#">Волонтёрство</a>
+                      <li class="accordion__item" data-close-menu>
+                        <a href="#volunteer">Волонтёрство</a>
                       </li>
-                      <li class="accordion__item">
-                        <a href="#">Стажировки</a>
+                      <li class="accordion__item" data-close-menu>
+                        <a href="#internships">Стажировки</a>
                       </li>
-                      <li class="accordion__item">
-                        <a href="#">Карьера</a>
+                      <li class="accordion__item" data-close-menu>
+                        <a href="#career">Карьера</a>
                       </li>
-                      <li class="accordion__item">
-                        <a href="#">Религия</a>
+                      <li class="accordion__item" data-close-menu id="religion">
+                        <a href="#religion">Религия</a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="accordion__element">
-                  <a href="#" class="accordion__button accordion__button">Контакты</a>
+                <div class="accordion__element" data-close-menu>
+                  <a href="#contacts" class="accordion__button accordion__button" data-close-menu>Контакты</a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <h1 class="visually-hidden">Образование за&nbsp;рубежом</h1>
         <div class="swiper hero__swiper">
           <!-- Additional required wrapper -->
@@ -194,9 +195,7 @@
           </div>
         </div>
       </section>
-
-
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__wrapper">
             <div class="about__heading">
@@ -237,69 +236,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Модалка -->
-      <div class="modal modal--preload" data-modal="feedback">
-        <div class="modal__wrapper">
-          <div class="modal__overlay" data-close-modal></div>
-          <div class="modal__content">
-            <div class="modal__heading">
-              <h2>Напишите нам</h2>
-              <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
-            </div>
-            <div class="modal__contacts" data-form-validate data-callback="base">
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
-                  <label for="name">
-                    Имя
-                    <input type="text" name="name" id="name" required>
-                  </label>
-                </div>
-                <div class="custom-input" data-validate-type="phone" data-on-input-validate="" data-on-input-validate data-required="" data-phone-length="18">
-                  <label for="number">
-                    Телефон
-                    <input type="tel" name="number" id="number" required>
-                  </label>
-                </div>
-                <div class="custom-select" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
-                  <span class="custom-select__label">Выберите город</span>
-                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
-                    <span class="custom-select__text"></span>
-                    <span class="custom-select__icon"></span>
-                  </button>
-                  <ul class="custom-select__list" role="listbox">
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
-                    <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
-                  </ul>
-                </div>
-                <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required="">
-                  <label>
-                    <input type="checkbox" value="user-agreement" name="user-agreement">
-                    <span class="custom-toggle__icon"></span>
-                    <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
-                  </label>
-                </div>
-                <button class="btn modal__button" type="submit">
-                  <span>Отправить</span>
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <use href="./img/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
-            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <use href="./img/sprite.svg#cross"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
 
       <section class="programs" id="programs">
         <div class="container">
@@ -465,8 +401,7 @@
           </div>
         </div>
       </section>
-
-      <section class="how">
+      <section class="how" id="how">
         <div class="container">
           <div class="how__wrapper">
             <div class="how__heading-wrapper">
@@ -493,14 +428,7 @@
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-      <section class="news">
+      <section class="news" id="news">
         <div class="container">
           <h2>Новости и материалы</h2>
           <div class="news__filters filters">
@@ -706,315 +634,401 @@
           </div>
         </div>
       </section>
-  </div>
-  </section>
-
-
-
-
-
-
-  <section class="faq">
-    <div class="faq__container container">
-      <h2>Вопросы и&nbsp;ответы</h2>
-      <ul class="faq__list" data-accordion="parent">
-        <li class="faq__item" data-accordion="element">
-          <div class="faq__content" data-accordion="button">
-            <div class="faq__body-heading">
-              <h3>Кто организатор? Какие сроки у&nbsp;программы?</h3>
-              <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
-            </div>
-            <div class="faq__body-text" data-accordion="content">
-              <p>Организатором программы является проект &laquo;Маса&raquo; в&nbsp;сотрудничестве с&nbsp;образовательными учреждениями. Сроки программы обмена могут варьироваться от&nbsp;одного семестра до&nbsp;года.</p>
-            </div>
-          </div>
-        </li>
-        <li class="faq__item" data-accordion="element">
-          <div class="faq__content" data-accordion="button">
-            <div class="faq__body-heading">
-              <h3>Что такое грант на&nbsp;обучение?</h3>
-              <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
-            </div>
-            <div class="faq__body-text" data-accordion="content">
-              <p>Грант на&nbsp;обучение&nbsp;&mdash; это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
-            </div>
-          </div>
-        </li>
-        <li class="faq__item" data-accordion="element">
-          <div class="faq__content" data-accordion="button">
-            <div class="faq__body-heading">
-              <h3>Как определяется стоимость программы?</h3>
-              <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
-            </div>
-            <div class="faq__body-text" data-accordion="content">
-              <p>Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления. В&nbsp;большинстве случаев грант &laquo;Маса&raquo; не&nbsp;покрывает полную стоимость программы, и&nbsp;поэтому предусматривается определённая доля личного участия.</p>
-            </div>
-          </div>
-        </li>
-        <li class="faq__item" data-accordion="element">
-          <div class="faq__content" data-accordion="button">
-            <div class="faq__body-heading">
-              <h3>Признаётся&nbsp;ли учеба в&nbsp;рамках проекта для дальнейшего обучения?</h3>
-              <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
-            </div>
-            <div class="faq__body-text" data-accordion="content">
-              <p>Студенты, участвующие в&nbsp;проекте, могут использовать полученные знания и&nbsp;навыки в&nbsp;своей будущей профессиональной деятельности или продолжить обучение в&nbsp;высших учебных заведениях. Кроме того, многие университеты и&nbsp;колледжи предоставляют кредиты за&nbsp;участие в&nbsp;программе обмена студентами.</p>
-            </div>
-          </div>
-        </li>
-        <li class="faq__item" data-accordion="element">
-          <div class="faq__content" data-accordion="button">
-            <div class="faq__body-heading">
-              <h3>Как выглядит полный процесс регистрации на&nbsp;программу &laquo;Маса&raquo;?</h3>
-              <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
-            </div>
-            <div class="faq__body-text" data-accordion="content">
-              <p>Процесс регистрации на&nbsp;программу обмена включает выбор университета-партнера и&nbsp;программы обмена, общение с&nbsp;координатором программы, заполнение заявления и&nbsp;предоставление необходимых документов, прохождение интервью, оформление визы, жилья и&nbsp;страховки, обучение по&nbsp;безопасности за&nbsp;границей и&nbsp;подписание договора об&nbsp;участии в&nbsp;программе. Подробнее можно узнать позвонив в&nbsp;центр.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-
-  <section class="reviews" id="reviews">
-    <div class="reviews__container container">
-      <h2>Отзывы</h2>
-      <div class="reviews__swiper swiper">
-        <div class="reviews__list swiper-wrapper">
-          <div class="reviews__item swiper-slide">
-            <div class="reviews__heading">
-              <div class="reviews__person">
-                <picture>
-                  <source type="image/webp" srcset="./img/reviews/reviews-1-desktop.webp, ./img/reviews/reviews-1-desktop@2x.webp 2x" width="90" height="90">
-                  <img src="./img/reviews/reviews`-1-desktop.jpg" srcset="./img/reviews/reviews-1-desktop@2x.jpg 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
-                </picture>
-                <h3>Сара Аврахам</h3>
-              </div>
-              <div class="reviews__details">
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Программа</p>
-                  <p class="reviews__details-text">Masa Art Challenge</p>
+      <section class="faq" id="faq">
+        <div class="faq__container container">
+          <h2>Вопросы и&nbsp;ответы</h2>
+          <ul class="faq__list" data-accordion="parent">
+            <li class="faq__item" data-accordion="element">
+              <div class="faq__content" data-accordion="button">
+                <div class="faq__body-heading">
+                  <h3>Кто организатор? Какие сроки у&nbsp;программы?</h3>
+                  <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                 </div>
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Дата</p>
-                  <p class="reviews__details-text">Осень 2022</p>
+                <div class="faq__body-text" data-accordion="content">
+                  <p>Организатором программы является проект &laquo;Маса&raquo; в&nbsp;сотрудничестве с&nbsp;образовательными учреждениями. Сроки программы обмена могут варьироваться от&nbsp;одного семестра до&nbsp;года.</p>
                 </div>
               </div>
-            </div>
-            <div class="reviews__card-text">
-              <p>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
-              <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
-            </div>
-          </div>
-          <div class="reviews__item swiper-slide">
-            <div class="reviews__heading">
-              <div class="reviews__person">
-                <picture>
-                  <source type="image/webp" srcset="./img/reviews/reviews-2-desktop.webp, ./img/reviews/reviews-2-desktop@2x.webp 2x" width="90" height="90">
-                  <img src="./img/reviews/reviews-2-desktop.jpg" srcset="./img/reviews/reviews-2-desktop@2x.jpg 2x" width="90" height="90" alt="Мужчина c бородой улыбается" loading="lazy">
-                </picture>
-                <h3>Давид Иммервар</h3>
-              </div>
-              <div class="reviews__details">
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Программа</p>
-                  <p class="reviews__details-text">Volunteer Chance</p>
+            </li>
+            <li class="faq__item" data-accordion="element">
+              <div class="faq__content" data-accordion="button">
+                <div class="faq__body-heading">
+                  <h3>Что такое грант на&nbsp;обучение?</h3>
+                  <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                 </div>
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Дата</p>
-                  <p class="reviews__details-text">Лето 2022</p>
+                <div class="faq__body-text" data-accordion="content">
+                  <p>Грант на&nbsp;обучение&nbsp;&mdash; это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.</p>
                 </div>
               </div>
-            </div>
-            <div class="reviews__card-text">
-              <p>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
-              <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
-            </div>
-          </div>
-          <div class="reviews__item swiper-slide">
-            <div class="reviews__heading">
-              <div class="reviews__person">
-                <picture>
-                  <source type="image/webp" srcset="./img/reviews/reviews-1-desktop.webp, ./img/reviews/reviews-1-desktop@2x.webp 2x" width="90" height="90">
-                  <img src="./img/reviews/reviews`-1-desktop.jpg" srcset="./img/reviews/reviews-1-desktop@2x.jpg 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
-                </picture>
-                <h3>Сара Аврахам</h3>
-              </div>
-              <div class="reviews__details">
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Программа</p>
-                  <p class="reviews__details-text">Masa Art Challenge</p>
+            </li>
+            <li class="faq__item" data-accordion="element">
+              <div class="faq__content" data-accordion="button">
+                <div class="faq__body-heading">
+                  <h3>Как определяется стоимость программы?</h3>
+                  <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                 </div>
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Дата</p>
-                  <p class="reviews__details-text">Осень 2022</p>
+                <div class="faq__body-text" data-accordion="content">
+                  <p>Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления. В&nbsp;большинстве случаев грант &laquo;Маса&raquo; не&nbsp;покрывает полную стоимость программы, и&nbsp;поэтому предусматривается определённая доля личного участия.</p>
                 </div>
               </div>
-            </div>
-            <div class="reviews__card-text">
-              <p>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
-              <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
-            </div>
-          </div>
-          <div class="reviews__item swiper-slide">
-            <div class="reviews__heading">
-              <div class="reviews__person">
-                <picture>
-                  <source type="image/webp" srcset="./img/reviews/reviews-2-desktop.webp, ./img/reviews/reviews-2-desktop@2x.webp 2x" width="90" height="90">
-                  <img src="./img/reviews/reviews-2-desktop.jpg" srcset="./img/reviews/reviews-2-desktop@2x.jpg 2x" width="90" height="90" alt="Мужчина c бородой улыбается" loading="lazy">
-                </picture>
-                <h3>Давид Иммервар</h3>
-              </div>
-              <div class="reviews__details">
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Программа</p>
-                  <p class="reviews__details-text">Volunteer Chance</p>
+            </li>
+            <li class="faq__item" data-accordion="element">
+              <div class="faq__content" data-accordion="button">
+                <div class="faq__body-heading">
+                  <h3>Признаётся&nbsp;ли учеба в&nbsp;рамках проекта для дальнейшего обучения?</h3>
+                  <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
                 </div>
-                <div class="reviews__details-item">
-                  <p class="reviews__details-title">Дата</p>
-                  <p class="reviews__details-text">Лето 2022</p>
+                <div class="faq__body-text" data-accordion="content">
+                  <p>Студенты, участвующие в&nbsp;проекте, могут использовать полученные знания и&nbsp;навыки в&nbsp;своей будущей профессиональной деятельности или продолжить обучение в&nbsp;высших учебных заведениях. Кроме того, многие университеты и&nbsp;колледжи предоставляют кредиты за&nbsp;участие в&nbsp;программе обмена студентами.</p>
+                </div>
+              </div>
+            </li>
+            <li class="faq__item" data-accordion="element">
+              <div class="faq__content" data-accordion="button">
+                <div class="faq__body-heading">
+                  <h3>Как выглядит полный процесс регистрации на&nbsp;программу &laquo;Маса&raquo;?</h3>
+                  <button class="faq__button" aria-label="Нажмите чтобы раскрыть ответ."></button>
+                </div>
+                <div class="faq__body-text" data-accordion="content">
+                  <p>Процесс регистрации на&nbsp;программу обмена включает выбор университета-партнера и&nbsp;программы обмена, общение с&nbsp;координатором программы, заполнение заявления и&nbsp;предоставление необходимых документов, прохождение интервью, оформление визы, жилья и&nbsp;страховки, обучение по&nbsp;безопасности за&nbsp;границей и&nbsp;подписание договора об&nbsp;участии в&nbsp;программе. Подробнее можно узнать позвонив в&nbsp;центр.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="reviews__container container">
+          <h2>Отзывы</h2>
+          <div class="reviews__swiper swiper">
+            <div class="reviews__list swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__heading">
+                  <div class="reviews__person">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/reviews-1-desktop.webp, ./img/reviews/reviews-1-desktop@2x.webp 2x" width="90" height="90">
+                      <img src="./img/reviews/reviews-1-desktop.png" srcset="./img/reviews/reviews-1-desktop@2x.png 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
+                    </picture>
+                    <h3>Сара Аврахам</h3>
+                  </div>
+                  <div class="reviews__details">
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Программа</p>
+                      <p class="reviews__details-text">Masa Art Challenge</p>
+                    </div>
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Дата</p>
+                      <p class="reviews__details-text">Осень 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__card-text">
+                  <p>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
+                  <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
+                </div>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__heading">
+                  <div class="reviews__person">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/reviews-2-desktop.webp, ./img/reviews/reviews-2-desktop@2x.webp 2x" width="90" height="90">
+                      <img src="./img/reviews/reviews-2-desktop.png" srcset="./img/reviews/reviews-2-desktop@2x.png 2x" width="90" height="90" alt="Мужчина c бородой улыбается" loading="lazy">
+                    </picture>
+                    <h3>Давид Иммервар</h3>
+                  </div>
+                  <div class="reviews__details">
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Программа</p>
+                      <p class="reviews__details-text">Volunteer Chance</p>
+                    </div>
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Дата</p>
+                      <p class="reviews__details-text">Лето 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__card-text">
+                  <p>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </div>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__heading">
+                  <div class="reviews__person">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/reviews-1-desktop.webp, ./img/reviews/reviews-1-desktop@2x.webp 2x" width="90" height="90">
+                      <img src="./img/reviews/reviews-1-desktop.png" srcset="./img/reviews/reviews-1-desktop@2x.png 2x" width="90" height="90" alt="Девушка в очках." loading="lazy">
+                    </picture>
+                    <h3>Сара Аврахам</h3>
+                  </div>
+                  <div class="reviews__details">
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Программа</p>
+                      <p class="reviews__details-text">Masa Art Challenge</p>
+                    </div>
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Дата</p>
+                      <p class="reviews__details-text">Осень 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__card-text">
+                  <p>Я&nbsp;могу с&nbsp;уверенностью сказать, что это был один из&nbsp;самых незабываемых опытов в&nbsp;жизни!</p>
+                  <p>Я&nbsp;рекомендую программу &laquo;Маса&raquo; всем израильским студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и&nbsp;значимой работы действительно отличает её&nbsp;от&nbsp;других программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне возможность.</p>
+                </div>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <div class="reviews__heading">
+                  <div class="reviews__person">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviews/reviews-2-desktop.webp, ./img/reviews/reviews-2-desktop@2x.webp 2x" width="90" height="90">
+                      <img src="./img/reviews/reviews-2-desktop.png" srcset="./img/reviews/reviews-2-desktop@2x.png 2x" width="90" height="90" alt="Мужчина c бородой улыбается" loading="lazy">
+                    </picture>
+                    <h3>Давид Иммервар</h3>
+                  </div>
+                  <div class="reviews__details">
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Программа</p>
+                      <p class="reviews__details-text">Volunteer Chance</p>
+                    </div>
+                    <div class="reviews__details-item">
+                      <p class="reviews__details-title">Дата</p>
+                      <p class="reviews__details-text">Лето 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__card-text">
+                  <p>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
+                  <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
                 </div>
               </div>
             </div>
-            <div class="reviews__card-text">
-              <p>Благодаря опыту стажировки я&nbsp;узнал так много нового о&nbsp;себе и&nbsp;об&nbsp;окружающем мире.</p>
-              <p>Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я&nbsp;бы очень рекомендовал эту волонтерскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на&nbsp;высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+          </div>
+          <div class="reviews__nav-wrapper">
+            <div class="swiper-scrollbar reviews__scrollbar"></div>
+          </div>
+          <div class="reviews__buttons-wrapper">
+            <div class="reviews__button-nav reviews__button-nav--prev">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="reviews__button-nav reviews__button-nav--next">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#arrow"></use>
+              </svg>
             </div>
           </div>
         </div>
-      </div>
-      <div class="reviews__nav-wrapper">
-        <div class="swiper-scrollbar reviews__scrollbar"></div>
-      </div>
-      <div class="reviews__buttons-wrapper">
-        <div class="reviews__button-nav reviews__button-nav--prev">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/sprite.svg#arrow"></use>
-          </svg>
-        </div>
-        <div class="reviews__button-nav reviews__button-nav--next">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/sprite.svg#arrow"></use>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="contacts" id="contacts">
-    <div class="contacts__container container">
-      <div class="contacts__heading-wrapper">
-        <h2>Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__header">Центральный офис</p>
-            <p class="contacts__text">г. Новосибирск, ул. Щетинкина&nbsp;68, культурный центр &laquo;Бейт Менахем&raquo;</p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__header">Телефон</p>
-            <a class="contacts__text contacts__text--link" href="tel:+796387687676">+7 963 876 876 76</a>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__header">E-mail</p>
-            <a class="contacts__text contacts__text--link" href="mailto:info@masa.ru">Info@masa.ru</a>
-          </li>
-        </ul>
-      </div>
-      <div class="contacts__map" id="map">
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="./img/map-mobile.webp, ./img/map-mobile@2x.webp 2x" width="290" height="240">
-          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/map-tablet.webp, ./img/map-tablet@2x.webp 2x" width="678" height="500">
-          <source type="image/webp" srcset="./img/map-desktop.webp, ./img/map-desktop@2x.webp 2x" width="1240" height="500">
-          <source media="(max-width: 767px)" srcset="./img/map-mobile.png, ./img/map-mobile@2x.png 2x" width="290" height="240">
-          <source media="(max-width: 1199px)" srcset="./img/map-tablet.png, ./img/map-tablet@2x.png 2x" width="678" height="500">
-          <img src="./img/map-desktop.png" srcset="./img/map-desktop@2x.png 2x" width="1240" height="500" alt="Карта" loading="lazy">
-        </picture>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="feedback">
-    <div class="container">
-      <div class="feedback__wrapper" data-form-validate data-callback="base">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <h2>Напишите нам</h2>
-          <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
-          <div class="custom-input custom-input--secondary" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
-            <label for="name">Имя<input type="text" name="name" id="name" required>
-            </label>
-          </div>
-          <div class="custom-input custom-input--secondary" data-validate-type="phone" data-on-input-validate="" data-on-input-validate data-required="" data-phone-length="18">
-            <label for="number">
-              Телефон
-              <input type="tel" name="number" id="number" required>
-            </label>
-          </div>
-          <div class="custom-textarea custom-textarea--secondary" data-validate-type="text" data-required>
-            <label>
-              <span class="custom-textarea__label">Ваше сообщение</span>
-              <textarea name="message" rows="5" cols="25"></textarea>
-            </label>
-          </div>
-          <div class="custom-select custom-select--secondary" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
-            <span class="custom-select__label">Выберите город</span>
-            <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
-              <span class="custom-select__text"></span>
-              <span class="custom-select__icon"></span>
-            </button>
-            <ul class="custom-select__list" role="listbox">
-              <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
-              <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__heading-wrapper">
+            <h2>Контакты</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__header">Центральный офис</p>
+                <p class="contacts__text">г. Новосибирск, ул. Щетинкина&nbsp;68, культурный центр &laquo;Бейт Менахем&raquo;</p>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__header">Телефон</p>
+                <a class="contacts__text contacts__text--link" href="tel:+796387687676">+7 963 876 876 76</a>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__header">E-mail</p>
+                <a class="contacts__text contacts__text--link" href="mailto:info@masa.ru">Info@masa.ru</a>
+              </li>
             </ul>
           </div>
-          <div class="custom-toggle custom-toggle--checkbox custom-toggle--secondary" data-validate-type="checkbox" data-required="">
-            <label>
-              <input type="checkbox" value="user-agreement" name="user-agreement">
-              <span class="custom-toggle__icon custom-toggle__icon--secondary"></span>
-              <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
-            </label>
+          <div class="contacts__map" id="map">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/map-mobile.webp, ./img/map-mobile@2x.webp 2x" width="290" height="240">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/map-tablet.webp, ./img/map-tablet@2x.webp 2x" width="678" height="500">
+              <source type="image/webp" srcset="./img/map-desktop.webp, ./img/map-desktop@2x.webp 2x" width="1240" height="500">
+              <source media="(max-width: 767px)" srcset="./img/map-mobile.png, ./img/map-mobile@2x.png 2x" width="290" height="240">
+              <source media="(max-width: 1199px)" srcset="./img/map-tablet.png, ./img/map-tablet@2x.png 2x" width="678" height="500">
+              <img src="./img/map-desktop.png" srcset="./img/map-desktop@2x.png 2x" width="1240" height="500" alt="Карта" loading="lazy">
+            </picture>
           </div>
-          <button class="btn btn--blue feedback__button" type="submit">
-            <span>Отправить</span>
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#arrow"></use>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <div class="container">
+          <div class="feedback__wrapper" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <h2>Напишите нам</h2>
+              <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!</p>
+              <div class="custom-input custom-input--secondary" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+                <label for="name">
+                  Имя<input type="text" name="name" id="name" required>
+                </label>
+              </div>
+              <div class="custom-input custom-input--secondary" data-validate-type="phone" data-on-input-validate data-required="" data-phone-length="18">
+                <label for="number">
+                  Телефон
+                  <input type="tel" name="number" id="number" required>
+                </label>
+              </div>
+              <div class="custom-textarea custom-textarea--secondary" data-validate-type="text" data-required>
+                <label>
+                  <span class="custom-textarea__label">Ваше сообщение</span>
+                  <textarea name="message" rows="5" cols="25"></textarea>
+                </label>
+              </div>
+              <div class="custom-select custom-select--secondary" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
+                <span class="custom-select__label">Выберите город</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                  <span class="custom-select__text"></span>
+                  <span class="custom-select__icon"></span>
+                </button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="custom-toggle custom-toggle--checkbox custom-toggle--secondary" data-validate-type="checkbox" data-required="">
+                <label>
+                  <input type="checkbox" value="user-agreement" name="user-agreement">
+                  <span class="custom-toggle__icon custom-toggle__icon--secondary"></span>
+                  <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                </label>
+              </div>
+              <button class="btn btn--blue feedback__button" type="submit">
+                <span>Отправить</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </form>
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/feedback-tablet.webp, ./img/feedback-tablet@2x.webp 2x" width="678" height="780">
+              <source type="image/webp" srcset="./img/feedback-desktop.webp, ./img/feedback-desktop@2x.webp 2x" width="1240" height="803">
+              <source media="(max-width: 1199px)" srcset="./img/feedback-tablet.png, ./img/feedback-tablet@2x.png 2x" width="678" height="780">
+              <img src="./img/feedback-desktop.png" srcset="./img/feedback-desktop@2x.png 2x" width="1240" height="803" alt="Домик на берегу" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container container">
+        <a class="logo footer__logo" href="index.html" aria-label="Переход на главную страницу">
+          <img src="./img/svg/logotype.svg" width="52" height="52" alt="Логотип">
+        </a>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#about">О&nbsp;проекте</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#programs">Программы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#details">Как поехать</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#news">Новости</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="ВКонтакте.">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="Одноклассники.">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="./img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" aria-label="Reddit.">
+              <svg width="16" height="16" aria-hidden="true">
+                <use href="./img/sprite.svg#red"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__bottom">
+          <p class="footer__copyright">Masa &copy;&nbsp;<time datetime="2023">2023</time> Все права защищены</p>
+          <a class="footer__link-politics" href="#!">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Модалка -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal__heading">
+            <h2>Напишите нам</h2>
+            <p>Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них&nbsp;ответим!</p>
+          </div>
+          <div class="modal__contacts" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+                <label for="name-mod">
+                  Имя
+                  <input type="text" name="name" id="name-mod" required>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required="" data-phone-length="18">
+                <label for="number-mod">
+                  Телефон
+                  <input type="tel" name="number" id="number-mod" required>
+                </label>
+              </div>
+              <div class="custom-select" data-select="" data-validate-type="select" data-name="city" data-id="city" data-required="">
+                <span class="custom-select__label">Выберите город</span>
+                <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                  <span class="custom-select__text"></span>
+                  <span class="custom-select__icon"></span>
+                </button>
+                <ul class="custom-select__list" role="listbox">
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Санкт-Петербург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required="">
+                <label>
+                  <input type="checkbox" value="user-agreement" name="user-agreement">
+                  <span class="custom-toggle__icon"></span>
+                  <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                </label>
+              </div>
+              <button class="btn modal__button" type="submit">
+                <span>Отправить</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#cross"></use>
             </svg>
           </button>
-        </form>
-        <picture>
-          <source type="image/webp" media="(max-width: 1199px)" srcset="./img/feedback-tablet.webp, ./img/feedback-tablet@2x.webp 2x" width="678" height="780">
-          <source type="image/webp" srcset="./img/feedback-desktop.webp, ./img/feedback-desktop@2x.webp 2x" width="1240" height="803">
-          <source media="(max-width: 1199px)" srcset="./img/feedback-tablet.png, ./img/feedback-tablet@2x.png 2x" width="678" height="780">
-          <img src="./img/feedback-desktop.jpg" srcset="./img/feedback-desktop@2x.png 2x" width="1240" height="803" alt="Домик на берегу" loading="lazy">
-        </picture>
+        </div>
       </div>
     </div>
-  </section>
-
-
-
-
-
-
-
-
-  </main>
-  <footer>
-    <div class="container"></div>
-  </footer>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

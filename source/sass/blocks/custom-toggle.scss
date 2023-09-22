@@ -55,7 +55,6 @@
       font-weight: 400;
       line-height: 12px;
     }
-
   }
 
   &--checkbox {
@@ -66,8 +65,6 @@
 
       width: 20px;
       height: 20px;
-
-      border-radius: 2px;
       border: 1px solid $color-cerulean-blue;
       opacity: 0.7;
       border-radius: 2px;
@@ -83,7 +80,7 @@
       }
 
       &:disabled {
-        background: rgba(255, 255, 255, 0.60);
+        background: rgba(255, 255, 255, 0.6);
       }
 
       &::before {
@@ -109,7 +106,7 @@
         &::before {
           background-color: transparent;
           border-radius: 2px;
-          border: 1px solid rgba(255, 255, 255, 0.60);
+          border: 1px solid rgba(255, 255, 255, 0.6);
         }
 
         @include hover-focus {
@@ -118,9 +115,8 @@
 
         &:disabled {
           border: 1px solid #ffffff;
-          background: rgba(255, 255, 255, 0.60);
+          background: rgba(255, 255, 255, 0.6);
         }
-
       }
     }
   }
@@ -163,26 +159,24 @@
     }
   }
 
-  input:checked+.custom-toggle__icon {
+  input:checked + .custom-toggle__icon {
     border: 1px solid $color-default-white;
     background-color: $color-default-white;
 
     &::before {
-      // background-color: #2c39f2;
-      // background: url(../../img/svg/checkbox.svg) no-repeat center;
-      background: url(../../img/svg/checked.svg) no-repeat center;
+      background: url("../../img/svg/checked.svg") no-repeat center;
       background-color: $color-default-white;
     }
 
     @include hover-focus {
       &::before {
-        background: url(../../img/svg/checkbox.svg) no-repeat center;
+        background: url("../../img/svg/checkbox.svg") no-repeat center;
       }
     }
 
     &:disabled {
       &::before {
-        background: url(../../img/svg/checked-disabled.svg) no-repeat center;
+        background: url("../../img/svg/checked-disabled.svg") no-repeat center;
       }
     }
   }
@@ -195,7 +189,7 @@
     .custom-toggle__icon {
       border: 1px solid #ff5e66;
       opacity: 0.7;
-      background: rgba(255, 94, 102, 0.20);
+      background: rgba(255, 94, 102, 0.2);
     }
   }
 
