@@ -2445,7 +2445,7 @@ button,
 
 .about__wrapper {
   padding-right: 106px;
-  padding-top: 60px;
+  padding-top: 122px;
   margin-bottom: 59px;
   display: -ms-grid;
   display: grid;
@@ -6129,7 +6129,7 @@ button,
     grid-template-columns: 1fr;
     padding-right: 180px;
     row-gap: 32px;
-    padding-top: 55px;
+    padding-top: 74px;
   }
 
   .about__features-list {
@@ -6976,6 +6976,10 @@ button,
     top: 5px;
   }
 
+  .custom-toggle--checkbox .custom-toggle__icon::before {
+    top: 12px;
+  }
+
   .faq__container {
     padding-top: 0;
     padding-bottom: 35px;
@@ -7810,7 +7814,7 @@ button,
   .custom-textarea label textarea {
     max-width: unset;
     width: 100%;
-    height: 43px;
+    height: 50px;
   }
 
   .custom-input__label,
