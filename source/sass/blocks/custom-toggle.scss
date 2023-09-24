@@ -113,6 +113,10 @@
           border: 1px solid rgb(255, 255, 255);
         }
 
+        &:focus {
+          border: 1px solid rgb(255, 255, 255);
+        }
+
         &:disabled {
           border: 1px solid #ffffff;
           background: rgba(255, 255, 255, 0.6);
@@ -161,14 +165,20 @@
 
   input:checked + .custom-toggle__icon {
     border: 1px solid $color-default-white;
-    background-color: $color-default-white;
+    background-color: $color-cerulean-blue;
 
     &::before {
-      background: url("../../img/svg/checked.svg") no-repeat center;
-      background-color: $color-default-white;
+      background: url("../../img/svg/checkbox.svg") no-repeat center;
+      background-color: $color-cerulean-blue;
     }
 
     @include hover-focus {
+      &::before {
+        background: url("../../img/svg/checkbox.svg") no-repeat center;
+      }
+    }
+
+    &:focus {
       &::before {
         background: url("../../img/svg/checkbox.svg") no-repeat center;
       }
@@ -178,6 +188,29 @@
       &::before {
         background: url("../../img/svg/checked-disabled.svg") no-repeat center;
       }
+    }
+
+    &--secondary {
+      &::before {
+        background: url("../../img/svg/checked.svg") no-repeat center;
+      }
+
+      &:focus {
+        &::before {
+          background: url("../../img/svg/checkbox.svg") no-repeat center;
+        }
+      }
+    }
+  }
+
+  input:focus + .custom-toggle__icon {
+    opacity: 1;
+  }
+
+  input:focus + .custom-toggle__icon--secondary {
+    opacity: 1;
+    &::before {
+      border: 1px solid $color-default-white;
     }
   }
 

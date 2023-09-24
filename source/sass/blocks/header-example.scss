@@ -207,6 +207,11 @@
       margin: 0;
       text-transform: uppercase;
       color: $color-default-white;
+
+      @include hover-focus {
+        opacity: 1;
+        outline: none;
+      }
     }
 
     @include vp-1199 {
