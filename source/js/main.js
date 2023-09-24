@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay: false,
+    autoplay: true,
     delay: 3000,
     // slidesPerView: 1,
     // spaceBetween: 10,
