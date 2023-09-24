@@ -3061,6 +3061,9 @@ button,
   .contacts__item {
     max-width: 100%;
     gap: 8px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .contacts__item p {
@@ -3782,28 +3785,28 @@ button,
   background-color: #316dc2;
 }
 .custom-toggle input:checked + .custom-toggle__icon::before {
-  background: url("../../img/svg/checkbox.svg") no-repeat center;
+  background: url("../img/svg/checkbox.svg") no-repeat center;
   background-color: #316dc2;
 }
 @media (hover: hover) {
   .custom-toggle input:checked + .custom-toggle__icon:hover:not(.focus-visible)::before {
-    background: url("../../img/svg/checkbox.svg") no-repeat center;
+    background: url("../img/svg/checkbox.svg") no-repeat center;
   }
 }
 .custom-toggle input:checked + .custom-toggle__icon.focus-visible:focus::before {
-  background: url("../../img/svg/checkbox.svg") no-repeat center;
+  background: url("../img/svg/checkbox.svg") no-repeat center;
 }
 .custom-toggle input:checked + .custom-toggle__icon:focus::before {
-  background: url("../../img/svg/checkbox.svg") no-repeat center;
+  background: url("../img/svg/checkbox.svg") no-repeat center;
 }
 .custom-toggle input:checked + .custom-toggle__icon:disabled::before {
-  background: url("../../img/svg/checked-disabled.svg") no-repeat center;
+  background: url("../img/svg/checked-disabled.svg") no-repeat center;
 }
 .custom-toggle input:checked + .custom-toggle__icon--secondary::before {
-  background: url("../../img/svg/checked.svg") no-repeat center;
+  background: url("../img/svg/checked.svg") no-repeat center;
 }
 .custom-toggle input:checked + .custom-toggle__icon--secondary:focus::before {
-  background: url("../../img/svg/checkbox.svg") no-repeat center;
+  background: url("../img/svg/checkbox.svg") no-repeat center;
 }
 .custom-toggle input:focus + .custom-toggle__icon {
   opacity: 1;
@@ -6354,6 +6357,7 @@ button,
     border-radius: 50%;
     width: 22px;
     height: 22px;
+    outline: none;
   }
 }
 .news__button-nav.focus-visible:focus {
@@ -6361,6 +6365,7 @@ button,
   border-radius: 50%;
   width: 22px;
   height: 22px;
+  outline: none;
 }
 .news__button-nav:active:not(.focus-visible) {
   opacity: 0.7;
@@ -7050,6 +7055,7 @@ button,
     border-radius: 50%;
     width: 22px;
     height: 22px;
+    outline: none;
   }
 }
 .programs__button-nav.focus-visible:focus {
@@ -7057,6 +7063,7 @@ button,
   border-radius: 50%;
   width: 22px;
   height: 22px;
+  outline: none;
 }
 .programs__button-nav:active:not(.focus-visible) {
   opacity: 0.7;
@@ -7428,6 +7435,7 @@ button,
     border-radius: 50%;
     width: 22px;
     height: 22px;
+    outline: none;
   }
 }
 .reviews__button-nav.focus-visible:focus {
@@ -7435,6 +7443,7 @@ button,
   border-radius: 50%;
   width: 22px;
   height: 22px;
+  outline: none;
 }
 .reviews__button-nav:active:not(.focus-visible) {
   opacity: 0.7;

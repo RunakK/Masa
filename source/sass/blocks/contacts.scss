@@ -127,6 +127,7 @@
     @include vp-767 {
       max-width: 100%;
       gap: 8px 0;
+      width: fit-content;
     }
 
     & p {

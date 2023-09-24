@@ -168,36 +168,36 @@
     background-color: $color-cerulean-blue;
 
     &::before {
-      background: url("../../img/svg/checkbox.svg") no-repeat center;
+      background: url("../img/svg/checkbox.svg") no-repeat center;
       background-color: $color-cerulean-blue;
     }
 
     @include hover-focus {
       &::before {
-        background: url("../../img/svg/checkbox.svg") no-repeat center;
+        background: url("../img/svg/checkbox.svg") no-repeat center;
       }
     }
 
     &:focus {
       &::before {
-        background: url("../../img/svg/checkbox.svg") no-repeat center;
+        background: url("../img/svg/checkbox.svg") no-repeat center;
       }
     }
 
     &:disabled {
       &::before {
-        background: url("../../img/svg/checked-disabled.svg") no-repeat center;
+        background: url("../img/svg/checked-disabled.svg") no-repeat center;
       }
     }
 
     &--secondary {
       &::before {
-        background: url("../../img/svg/checked.svg") no-repeat center;
+        background: url("../img/svg/checked.svg") no-repeat center;
       }
 
       &:focus {
         &::before {
-          background: url("../../img/svg/checkbox.svg") no-repeat center;
+          background: url("../img/svg/checkbox.svg") no-repeat center;
         }
       }
     }
