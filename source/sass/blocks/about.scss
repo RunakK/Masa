@@ -100,7 +100,7 @@
 
   &__wrapper {
     padding-right: 106px;
-    padding-top: 60px;
+    padding-top: 122px;
     margin-bottom: 59px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,7 +110,7 @@
       grid-template-columns: 1fr;
       padding-right: 180px;
       row-gap: 32px;
-      padding-top: 55px;
+      padding-top: 74px;
     }
 
     @include vp-767 {
