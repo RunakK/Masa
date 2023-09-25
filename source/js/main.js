@@ -246,6 +246,10 @@ window.addEventListener('DOMContentLoaded', () => {
   L.marker([55.028527396640804, 82.92824989073691], {icon: greenIcon}).addTo(map);
 
 
+  //Добавление фокуса на поле имя в модалке
+  // Получаем поле с именем
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -255,6 +259,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
   });
 });
 
