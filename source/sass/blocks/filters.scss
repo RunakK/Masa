@@ -10,6 +10,10 @@
     overflow: auto;
   }
 
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__button {
     padding: 11px 26px;
     font-size: 14px;
@@ -32,6 +36,8 @@
     &--active {
       border-radius: 20px;
       border: 1px solid $color-cerulean-blue;
+      color: #316DC2;
+      opacity: 1;
     }
 
     @include vp-1199 {

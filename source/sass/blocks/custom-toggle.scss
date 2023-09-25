@@ -54,6 +54,23 @@
       font-style: normal;
       font-weight: 400;
       line-height: 12px;
+      opacity: 0.9;
+    }
+
+    @include hover-focus {
+      span {
+        opacity: 1;
+      }
+
+      .custom-toggle__icon.custom-toggle__icon--secondary {
+        border: 1px solid #fff;
+        opacity: 1;
+
+        &::before {
+          border: 1px solid #fff;
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -167,7 +184,7 @@
     }
   }
 
-  input:checked + .custom-toggle__icon {
+  input:checked+.custom-toggle__icon {
     border: 1px solid $color-default-white;
     background-color: $color-cerulean-blue;
 
@@ -207,12 +224,13 @@
     }
   }
 
-  input:focus + .custom-toggle__icon {
+  input:focus+.custom-toggle__icon {
     opacity: 1;
   }
 
-  input:focus + .custom-toggle__icon--secondary {
+  input:focus+.custom-toggle__icon--secondary {
     opacity: 1;
+
     &::before {
       border: 1px solid $color-default-white;
     }

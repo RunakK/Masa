@@ -169,7 +169,7 @@
       @include vp-1199 {
         height: 578px;
         margin-left: auto;
-        max-height: 90vh;
+        max-height: 130vh;
       }
 
       @include vp-767 {
@@ -218,12 +218,14 @@
       flex-direction: column;
       margin: 0 0 70px 0;
       max-width: unset;
+      padding-bottom: 31px;
     }
 
     @include vp-767 {
       align-items: flex-start;
       margin: 0 0 62px 0;
       margin-bottom: 0;
+      padding-bottom: 25px;
     }
   }
 

@@ -66,6 +66,13 @@
     position: relative;
     padding-bottom: 60px;
 
+    min-height: 65vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    bottom: 0;
+    justify-content: end;
+
     @include vp-1199 {
       margin-top: 676px;
     }
@@ -284,4 +291,7 @@
     }
   }
 
+  & .swiper-slide {
+    height: auto;
+  }
 }

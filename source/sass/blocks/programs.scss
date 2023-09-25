@@ -138,6 +138,15 @@
     &--next {
       rotate: 45deg;
     }
+
+    &.swiper-button-disabled {
+      cursor: default;
+      pointer-events: none;
+
+      & svg {
+        color: #a9afb7;
+      }
+    }
   }
 
   &__heading {
